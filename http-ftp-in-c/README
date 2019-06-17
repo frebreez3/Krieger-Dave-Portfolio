@@ -1,0 +1,33 @@
+README:
+
+Requirements:
+    * Sign up as a user and password
+        --> curl -X POST "http://192.168.0.155:8080/login?username=End&password=Me"
+              * saves user and pass in respective file: 'users.txt'
+        --> will return a setcookie but doesn't stay with client
+    * Access files via setting the cookie to your username and password:
+        --> curl -X POST --cookie "End=Me" 192.168.0.155:8080/some.txt --data-binary @some.txt
+        --> curl -X GET --cookie "End=Me" 192.168.0.155:8080/some.txt --data-binary @some.txt
+              *  Use -O flag for GET if you want to actually DL the file!
+
+Success:
+    * All users must first create a username & password
+        --> Error checks for dup users
+    * Must submit their authorization token as a Cookie
+        --> Not sure if this is correct, its just how I implemented it...
+        --> This cookie is then compared to the users list to see if the username and password is correct
+    * All users have own directories
+    * GET success & returns proper codes
+    * POST success for files both less than and greater than buffer size
+        -> Can handle any file size!
+Makefile Notes:
+    make                --> generates server, run it with ./server
+    make clean          --> removes everything: subdirectories, user.txt, and o files
+    make signUp         --> creates a user and password
+    make postSmall      --> post a small text file
+    make getSmall       --> a nice follow up command to grab the file
+    make postBig        --> a VERY BIG text file 6MB, post
+    make getBig         --> retrieves the very big text file
+    make dupUser        -->Test for duplicate user signups
+    make wrongPassword  --> Test for wrong password
+    make get404         --> Test for get requests to missing file
