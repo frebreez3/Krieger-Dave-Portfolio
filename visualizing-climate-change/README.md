@@ -1,6 +1,6 @@
 # Visulaing Climate Change - Data Wrangling and Data Visualization
 
-A Modified Github Repo from my senior-design group, "*Data Visualization*". We were a four computer science undergraduates studying at UCSC. This repo features almost exclusively my work accomplished with the team as well as new code I have developed since graduating.
+A Modified Github Repo from my senior-design group, "*Data Visualization*". We were a groupfour computer science undergraduates studying at UCSC. However, this repo features almost exclusively my work accomplished with the team as well as new code I have developed since graduating.
 
 https://data-vizuals.herokuapp.com/
 
