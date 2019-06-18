@@ -2,7 +2,7 @@
 
 A Modified Github Repo from my senior-design group, "*Data Visualization*". We were a group of four computer science undergraduates studying at UCSC. However, this repo features almost exclusively my work accomplished with the team as well as new code I have developed since graduating.
 
-https://data-vizuals.herokuapp.com/
+https://data-visuals.herokuapp.com/
 
 Directory breakdown
 * dataSets  
