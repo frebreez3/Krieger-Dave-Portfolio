@@ -1,6 +1,6 @@
 # Dave-Krieger: Portfolio
 
-Welcome to my portfolio! I have provided three different programs showcasing my experience and skills. My most recent and best work is likely my senior-design-project: "visualizing-climate-change. My team and I spent two quarters developing a climate change website featuring unique data-visualizations. Since graduating, I have stripped all their work out and have continued work on my own repo of this project.  
+Welcome to my portfolio! I have provided three different programs showcasing my experience and skills. My most recent and best work is likely my senior-design-project: "visualizing-climate-change. My team and I spent two quarters developing a climate change website featuring unique data-visualizations. Since graduating, I have stripped all their work out and have continued work on my own repo of this project. Additional README's have been written post hoc and aim to provide additional info. Below is a brief overview of what each program does.
 
 * Visualizing Climate Change
 	* Data Wrangling via Python
