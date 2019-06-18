@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : collisionedge.vf
+// /___/   /\     Timestamp : 03/02/2016 12:51:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/dakriege/Desktop/Lab7/Lab7/collisionedge.vf -w C:/Users/dakriege/Desktop/Lab7/Lab7/collisionedge.sch
+//Design Name: collisionedge
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module collisionedge(clock, 
+                     Collision, 
+                     foursec, 
+                     Collisionedge, 
+                     holdcollision);
+
+    input clock;
+    input Collision;
+    input foursec;
+   output Collisionedge;
+   output holdcollision;
+   
+   wire XLXN_1070;
+   wire XLXN_1087;
+   wire XLXN_1088;
+   wire Collisionedge_DUMMY;
+   wire holdcollision_DUMMY;
+   
+   assign Collisionedge = Collisionedge_DUMMY;
+   assign holdcollision = holdcollision_DUMMY;
+   AND2B1  XLXI_15 (.I0(XLXN_1088), 
+                   .I1(XLXN_1087), 
+                   .O(Collisionedge_DUMMY));
+   FDC #( .INIT(1'b0) ) XLXI_446 (.C(clock), 
+                 .CLR(foursec), 
+                 .D(XLXN_1070), 
+                 .Q(holdcollision_DUMMY));
+   OR2  XLXI_447 (.I0(holdcollision_DUMMY), 
+                 .I1(Collisionedge_DUMMY), 
+                 .O(XLXN_1070));
+   FDC #( .INIT(1'b0) ) XLXI_458 (.C(clock), 
+                 .CLR(foursec), 
+                 .D(Collision), 
+                 .Q(XLXN_1087));
+   FDC #( .INIT(1'b0) ) XLXI_459 (.C(clock), 
+                 .CLR(foursec), 
+                 .D(XLXN_1087), 
+                 .Q(XLXN_1088));
+endmodule

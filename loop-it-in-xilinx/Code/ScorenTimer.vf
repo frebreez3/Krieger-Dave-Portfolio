@@ -1,0 +1,452 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ScorenTimer.vf
+// /___/   /\     Timestamp : 03/03/2016 11:55:16
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/dakriege/Desktop/Lab7/Lab7/ScorenTimer.vf -w C:/Users/dakriege/Desktop/Lab7/Lab7/ScorenTimer.sch
+//Design Name: ScorenTimer
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1B1_MXILINX_ScorenTimer(D0, 
+                                  D1, 
+                                  S0, 
+                                  O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B2  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_ScorenTimer(D0, 
+                                D1, 
+                                S0, 
+                                O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module FTCLEX_MXILINX_ScorenTimer(C, 
+                                  CE, 
+                                  CLR, 
+                                  D, 
+                                  L, 
+                                  T, 
+                                  Q);
+
+   parameter INIT = 1'b0;
+   
+    input C;
+    input CE;
+    input CLR;
+    input D;
+    input L;
+    input T;
+   output Q;
+   
+   wire MD;
+   wire TQ;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   (* HU_SET = "I_36_30_81" *) 
+   M2_1_MXILINX_ScorenTimer  I_36_30 (.D0(TQ), 
+                                     .D1(D), 
+                                     .S0(L), 
+                                     .O(MD));
+   XOR2  I_36_32 (.I0(T), 
+                 .I1(Q_DUMMY), 
+                 .O(TQ));
+   (* RLOC = "X0Y0" *) 
+   FDCE  I_36_35 (.C(C), 
+                 .CE(CE), 
+                 .CLR(CLR), 
+                 .D(MD), 
+                 .Q(Q_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module CB4CLED_MXILINX_ScorenTimer(C, 
+                                   CE, 
+                                   CLR, 
+                                   D0, 
+                                   D1, 
+                                   D2, 
+                                   D3, 
+                                   L, 
+                                   UP, 
+                                   CEO, 
+                                   Q0, 
+                                   Q1, 
+                                   Q2, 
+                                   Q3, 
+                                   TC);
+
+    input C;
+    input CE;
+    input CLR;
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input L;
+    input UP;
+   output CEO;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   output TC;
+   
+   wire OR_CE_L;
+   wire TC_DN;
+   wire TC_UP;
+   wire T1;
+   wire T2;
+   wire T2_DN;
+   wire T2_UP;
+   wire T3;
+   wire T3_DN;
+   wire T3_UP;
+   wire XLXN_1;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire Q2_DUMMY;
+   wire Q3_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign Q2 = Q2_DUMMY;
+   assign Q3 = Q3_DUMMY;
+   assign TC = TC_DUMMY;
+   (* HU_SET = "I_Q0_85" *) 
+   FTCLEX_MXILINX_ScorenTimer #( .INIT(1'b0) ) I_Q0 (.C(C), 
+                                    .CE(OR_CE_L), 
+                                    .CLR(CLR), 
+                                    .D(D0), 
+                                    .L(L), 
+                                    .T(XLXN_1), 
+                                    .Q(Q0_DUMMY));
+   (* HU_SET = "I_Q1_84" *) 
+   FTCLEX_MXILINX_ScorenTimer #( .INIT(1'b0) ) I_Q1 (.C(C), 
+                                    .CE(OR_CE_L), 
+                                    .CLR(CLR), 
+                                    .D(D1), 
+                                    .L(L), 
+                                    .T(T1), 
+                                    .Q(Q1_DUMMY));
+   (* HU_SET = "I_Q2_83" *) 
+   FTCLEX_MXILINX_ScorenTimer #( .INIT(1'b0) ) I_Q2 (.C(C), 
+                                    .CE(OR_CE_L), 
+                                    .CLR(CLR), 
+                                    .D(D2), 
+                                    .L(L), 
+                                    .T(T2), 
+                                    .Q(Q2_DUMMY));
+   (* HU_SET = "I_Q3_82" *) 
+   FTCLEX_MXILINX_ScorenTimer #( .INIT(1'b0) ) I_Q3 (.C(C), 
+                                    .CE(OR_CE_L), 
+                                    .CLR(CLR), 
+                                    .D(D3), 
+                                    .L(L), 
+                                    .T(T3), 
+                                    .Q(Q3_DUMMY));
+   (* HU_SET = "I_TC_88" *) 
+   M2_1_MXILINX_ScorenTimer  I_TC (.D0(TC_DN), 
+                                  .D1(TC_UP), 
+                                  .S0(UP), 
+                                  .O(TC_DUMMY));
+   (* HU_SET = "I_T1_89" *) 
+   M2_1B1_MXILINX_ScorenTimer  I_T1 (.D0(Q0_DUMMY), 
+                                    .D1(Q0_DUMMY), 
+                                    .S0(UP), 
+                                    .O(T1));
+   (* HU_SET = "I_T2_86" *) 
+   M2_1_MXILINX_ScorenTimer  I_T2 (.D0(T2_DN), 
+                                  .D1(T2_UP), 
+                                  .S0(UP), 
+                                  .O(T2));
+   (* HU_SET = "I_T3_87" *) 
+   M2_1_MXILINX_ScorenTimer  I_T3 (.D0(T3_DN), 
+                                  .D1(T3_UP), 
+                                  .S0(UP), 
+                                  .O(T3));
+   VCC  I_36_1 (.P(XLXN_1));
+   AND2B2  I_36_3 (.I0(Q1_DUMMY), 
+                  .I1(Q0_DUMMY), 
+                  .O(T2_DN));
+   AND4  I_36_10 (.I0(Q3_DUMMY), 
+                 .I1(Q2_DUMMY), 
+                 .I2(Q1_DUMMY), 
+                 .I3(Q0_DUMMY), 
+                 .O(TC_UP));
+   AND4B4  I_36_11 (.I0(Q3_DUMMY), 
+                   .I1(Q2_DUMMY), 
+                   .I2(Q1_DUMMY), 
+                   .I3(Q0_DUMMY), 
+                   .O(TC_DN));
+   AND3  I_36_15 (.I0(Q2_DUMMY), 
+                 .I1(Q1_DUMMY), 
+                 .I2(Q0_DUMMY), 
+                 .O(T3_UP));
+   AND3B3  I_36_16 (.I0(Q2_DUMMY), 
+                   .I1(Q1_DUMMY), 
+                   .I2(Q0_DUMMY), 
+                   .O(T3_DN));
+   AND2  I_36_37 (.I0(Q1_DUMMY), 
+                 .I1(Q0_DUMMY), 
+                 .O(T2_UP));
+   AND2  I_36_50 (.I0(CE), 
+                 .I1(TC_DUMMY), 
+                 .O(CEO));
+   OR2  I_36_60 (.I0(CE), 
+                .I1(L), 
+                .O(OR_CE_L));
+endmodule
+`timescale 1ns / 1ps
+
+module FTCE_MXILINX_ScorenTimer(C, 
+                                CE, 
+                                CLR, 
+                                T, 
+                                Q);
+
+   parameter INIT = 1'b0;
+   
+    input C;
+    input CE;
+    input CLR;
+    input T;
+   output Q;
+   
+   wire TQ;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   XOR2  I_36_32 (.I0(T), 
+                 .I1(Q_DUMMY), 
+                 .O(TQ));
+   (* RLOC = "X0Y0" *) 
+   FDCE  I_36_35 (.C(C), 
+                 .CE(CE), 
+                 .CLR(CLR), 
+                 .D(TQ), 
+                 .Q(Q_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module CB8CE_MXILINX_ScorenTimer(C, 
+                                 CE, 
+                                 CLR, 
+                                 CEO, 
+                                 Q, 
+                                 TC);
+
+    input C;
+    input CE;
+    input CLR;
+   output CEO;
+   output [7:0] Q;
+   output TC;
+   
+   wire T2;
+   wire T3;
+   wire T4;
+   wire T5;
+   wire T6;
+   wire T7;
+   wire XLXN_1;
+   wire [7:0] Q_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Q[7:0] = Q_DUMMY[7:0];
+   assign TC = TC_DUMMY;
+   (* HU_SET = "I_Q0_96" *) 
+   FTCE_MXILINX_ScorenTimer #( .INIT(1'b0) ) I_Q0 (.C(C), 
+                                  .CE(CE), 
+                                  .CLR(CLR), 
+                                  .T(XLXN_1), 
+                                  .Q(Q_DUMMY[0]));
+   (* HU_SET = "I_Q1_97" *) 
+   FTCE_MXILINX_ScorenTimer #( .INIT(1'b0) ) I_Q1 (.C(C), 
+                                  .CE(CE), 
+                                  .CLR(CLR), 
+                                  .T(Q_DUMMY[0]), 
+                                  .Q(Q_DUMMY[1]));
+   (* HU_SET = "I_Q2_93" *) 
+   FTCE_MXILINX_ScorenTimer #( .INIT(1'b0) ) I_Q2 (.C(C), 
+                                  .CE(CE), 
+                                  .CLR(CLR), 
+                                  .T(T2), 
+                                  .Q(Q_DUMMY[2]));
+   (* HU_SET = "I_Q3_94" *) 
+   FTCE_MXILINX_ScorenTimer #( .INIT(1'b0) ) I_Q3 (.C(C), 
+                                  .CE(CE), 
+                                  .CLR(CLR), 
+                                  .T(T3), 
+                                  .Q(Q_DUMMY[3]));
+   (* HU_SET = "I_Q4_95" *) 
+   FTCE_MXILINX_ScorenTimer #( .INIT(1'b0) ) I_Q4 (.C(C), 
+                                  .CE(CE), 
+                                  .CLR(CLR), 
+                                  .T(T4), 
+                                  .Q(Q_DUMMY[4]));
+   (* HU_SET = "I_Q5_92" *) 
+   FTCE_MXILINX_ScorenTimer #( .INIT(1'b0) ) I_Q5 (.C(C), 
+                                  .CE(CE), 
+                                  .CLR(CLR), 
+                                  .T(T5), 
+                                  .Q(Q_DUMMY[5]));
+   (* HU_SET = "I_Q6_91" *) 
+   FTCE_MXILINX_ScorenTimer #( .INIT(1'b0) ) I_Q6 (.C(C), 
+                                  .CE(CE), 
+                                  .CLR(CLR), 
+                                  .T(T6), 
+                                  .Q(Q_DUMMY[6]));
+   (* HU_SET = "I_Q7_90" *) 
+   FTCE_MXILINX_ScorenTimer #( .INIT(1'b0) ) I_Q7 (.C(C), 
+                                  .CE(CE), 
+                                  .CLR(CLR), 
+                                  .T(T7), 
+                                  .Q(Q_DUMMY[7]));
+   AND5  I_36_1 (.I0(Q_DUMMY[7]), 
+                .I1(Q_DUMMY[6]), 
+                .I2(Q_DUMMY[5]), 
+                .I3(Q_DUMMY[4]), 
+                .I4(T4), 
+                .O(TC_DUMMY));
+   AND2  I_36_2 (.I0(Q_DUMMY[4]), 
+                .I1(T4), 
+                .O(T5));
+   AND3  I_36_11 (.I0(Q_DUMMY[5]), 
+                 .I1(Q_DUMMY[4]), 
+                 .I2(T4), 
+                 .O(T6));
+   AND4  I_36_15 (.I0(Q_DUMMY[3]), 
+                 .I1(Q_DUMMY[2]), 
+                 .I2(Q_DUMMY[1]), 
+                 .I3(Q_DUMMY[0]), 
+                 .O(T4));
+   VCC  I_36_16 (.P(XLXN_1));
+   AND2  I_36_24 (.I0(Q_DUMMY[1]), 
+                 .I1(Q_DUMMY[0]), 
+                 .O(T2));
+   AND3  I_36_26 (.I0(Q_DUMMY[2]), 
+                 .I1(Q_DUMMY[1]), 
+                 .I2(Q_DUMMY[0]), 
+                 .O(T3));
+   AND4  I_36_28 (.I0(Q_DUMMY[6]), 
+                 .I1(Q_DUMMY[5]), 
+                 .I2(Q_DUMMY[4]), 
+                 .I3(T4), 
+                 .O(T7));
+   AND2  I_36_31 (.I0(CE), 
+                 .I1(TC_DUMMY), 
+                 .O(CEO));
+endmodule
+`timescale 1ns / 1ps
+
+module ScorenTimer(clk, 
+                   loselife, 
+                   pb1, 
+                   resettimer, 
+                   scoreincrement, 
+                   timeframeCE, 
+                   flash, 
+                   lives, 
+                   score, 
+                   TC);
+
+    input clk;
+    input loselife;
+    input pb1;
+    input resettimer;
+    input scoreincrement;
+    input timeframeCE;
+   output [7:0] flash;
+   output [3:0] lives;
+   output [7:0] score;
+   output TC;
+   
+   wire XLXN_29;
+   wire XLXN_50;
+   wire XLXN_58;
+   
+   (* HU_SET = "XLXI_2_98" *) 
+   CB8CE_MXILINX_ScorenTimer  XLXI_2 (.C(clk), 
+                                     .CE(timeframeCE), 
+                                     .CLR(resettimer), 
+                                     .CEO(), 
+                                     .Q(flash[7:0]), 
+                                     .TC(TC));
+   (* HU_SET = "XLXI_6_100" *) 
+   CB4CLED_MXILINX_ScorenTimer  XLXI_6 (.C(clk), 
+                                       .CE(loselife), 
+                                       .CLR(XLXN_50), 
+                                       .D0(XLXN_29), 
+                                       .D1(XLXN_29), 
+                                       .D2(), 
+                                       .D3(), 
+                                       .L(pb1), 
+                                       .UP(XLXN_58), 
+                                       .CEO(), 
+                                       .Q0(lives[0]), 
+                                       .Q1(lives[1]), 
+                                       .Q2(lives[2]), 
+                                       .Q3(lives[3]), 
+                                       .TC());
+   (* HU_SET = "XLXI_7_99" *) 
+   CB8CE_MXILINX_ScorenTimer  XLXI_7 (.C(clk), 
+                                     .CE(scoreincrement), 
+                                     .CLR(pb1), 
+                                     .CEO(), 
+                                     .Q(score[7:0]), 
+                                     .TC());
+   VCC  XLXI_8 (.P(XLXN_29));
+   GND  XLXI_13 (.G(XLXN_50));
+endmodule

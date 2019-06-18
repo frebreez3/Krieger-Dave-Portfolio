@@ -1,0 +1,8 @@
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Collision.v -lang verilog -prj Lab7 -o Collision.spl -module Collision -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Collision.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Collision.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Collision.v -lang verilog -prj Lab7 -o Collision.spl -module Collision -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Collision.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Collision.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Collision.v -lang verilog -prj Lab7 -o Collision.spl -module Collision -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Collision.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Collision.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Collision.v -lang verilog -prj Lab7 -o Collision.spl -module Collision -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Collision.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Collision.sym 

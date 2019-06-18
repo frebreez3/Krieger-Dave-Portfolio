@@ -1,0 +1,16 @@
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.v -lang verilog -prj Lab7 -o HSync.spl -module HSync -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e HSync.spl C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.v -lang verilog -prj Lab7 -o HSync.spl -module HSync -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w HSync.spl C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.v -lang verilog -prj Lab7 -o HSync.spl -module HSync -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w HSync.spl C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.v -lang verilog -prj Lab7 -o HSync.spl -module HSync -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w HSync.spl C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.v -lang verilog -prj Lab7 -o HSync.spl -module HSync -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w HSync.spl C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.v -lang verilog -prj Lab7 -o HSync.spl -module HSync -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w HSync.spl C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.v -lang verilog -prj Lab7 -o HSync.spl -module HSync -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w HSync.spl C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.v -lang verilog -prj Lab7 -o HSync.spl -module HSync -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w HSync.spl C:/Users/dakriege/Desktop/Lab7/Lab7/HSync.sym 

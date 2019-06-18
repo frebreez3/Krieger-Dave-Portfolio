@@ -1,0 +1,23 @@
+[Inputs]
+pb1
+pb2
+foursec
+nolives
+collision
+paddlegone
+=PS[5:0]=
+[Outputs]
+movecarpet
+moveball
+movepaddle
+resettimer
+decrementlives
+loadlives
+paddlehide
+timecount
+resetpositions
+=NS[5:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel FSMveri
+

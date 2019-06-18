@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : scoredetect.vf
+// /___/   /\     Timestamp : 03/03/2016 11:55:15
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/dakriege/Desktop/Lab7/Lab7/scoredetect.vf -w C:/Users/dakriege/Desktop/Lab7/Lab7/scoredetect.sch
+//Design Name: scoredetect
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module scoredetect(ball, 
+                   clock, 
+                   paddlescore, 
+                   scoredet);
+
+    input ball;
+    input clock;
+    input paddlescore;
+   output scoredet;
+   
+   wire XLXN_56;
+   wire XLXN_57;
+   wire XLXN_62;
+   
+   AND2B1  XLXI_15 (.I0(XLXN_57), 
+                   .I1(XLXN_56), 
+                   .O(scoredet));
+   FD #( .INIT(1'b0) ) XLXI_455 (.C(clock), 
+                .D(XLXN_62), 
+                .Q(XLXN_56));
+   FD #( .INIT(1'b0) ) XLXI_456 (.C(clock), 
+                .D(XLXN_56), 
+                .Q(XLXN_57));
+   AND2  XLXI_457 (.I0(ball), 
+                  .I1(paddlescore), 
+                  .O(XLXN_62));
+endmodule

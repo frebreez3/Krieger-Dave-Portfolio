@@ -1,0 +1,15 @@
+[Inputs]
+frame
+pb0
+=col[15:0]=
+=row[15:0]=
+=paddlecol[15:0]=
+=paddlerow[15:0]=
+[Outputs]
+paddle
+=paddlecolout[15:0]=
+=paddlerowout[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Paddlemove
+

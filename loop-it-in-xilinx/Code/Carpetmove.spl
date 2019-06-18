@@ -1,0 +1,11 @@
+[Inputs]
+=col[15:0]=
+=row[15:0]=
+=CarpetCount[15:0]=
+[Outputs]
+swirl
+reset
+[BiDir]
+[ATTRIBUTES]
+VeriModel Carpetmove
+

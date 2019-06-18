@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\dakriege\Desktop\Lab7\Lab7\Top.ncd
+OUTFILE=C:\Users\dakriege\Desktop\Lab7\Lab7\Top.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\dakriege\Desktop\Lab7\Lab7
+LICENSE=WebPack
+USER_INFO=210697467_1777488619_210576444_241

@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : collisionholdedgedet.vf
+// /___/   /\     Timestamp : 03/02/2016 08:39:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/dakriege/Desktop/Lab7/Lab7/collisionholdedgedet.vf -w C:/Users/dakriege/Desktop/Lab7/Lab7/collisionholdedgedet.sch
+//Design Name: collisionholdedgedet
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module collisionholdedgedet(clock, 
+                            collision, 
+                            collisionremove);
+
+    input clock;
+    input collision;
+   output collisionremove;
+   
+   wire clk;
+   wire XLXN_58;
+   wire XLXN_59;
+   
+   AND2B1  XLXI_15 (.I0(XLXN_58), 
+                   .I1(XLXN_59), 
+                   .O(collisionremove));
+   FD #( .INIT(1'b0) ) XLXI_455 (.C(clock), 
+                .D(collision), 
+                .Q(XLXN_58));
+   FD #( .INIT(1'b0) ) XLXI_456 (.C(clk), 
+                .D(XLXN_58), 
+                .Q(XLXN_59));
+endmodule

@@ -1,0 +1,21 @@
+[Inputs]
+paddle
+ball
+carpet
+carpetcolor
+game
+rgbactive
+[Outputs]
+red0
+red1
+red2
+grn0
+grn1
+grn2
+blu1
+blu2
+collision
+[BiDir]
+[ATTRIBUTES]
+VeriModel rgbManage
+

@@ -1,0 +1,30 @@
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.v -lang verilog -prj Lab7 -o Ball.spl -module Ball -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Ball.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Ball.sym 

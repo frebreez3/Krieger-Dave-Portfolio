@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym LFSR_RNG C:/Users/dakriege/Desktop/Lab7/Lab7/LFSR_RNG.sch C:/Users/dakriege/Desktop/Lab7/Lab7/LFSR_RNG.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym LFSR_RNG C:/Users/dakriege/Desktop/Lab7/Lab7/LFSR_RNG.sch C:/Users/dakriege/Desktop/Lab7/Lab7/LFSR_RNG.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym LFSR_RNG C:/Users/dakriege/Desktop/Lab7/Lab7/LFSR_RNG.sch C:/Users/dakriege/Desktop/Lab7/Lab7/LFSR_RNG.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym LFSR_RNG C:/Users/dakriege/Desktop/Lab7/Lab7/LFSR_RNG.sch C:/Users/dakriege/Desktop/Lab7/Lab7/LFSR_RNG.sym 

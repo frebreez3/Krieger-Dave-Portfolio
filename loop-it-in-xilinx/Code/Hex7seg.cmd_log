@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Hex7seg.v -lang verilog -prj Lab7 -o Hex7seg.spl -module Hex7seg -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Hex7seg.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Hex7seg.sym 

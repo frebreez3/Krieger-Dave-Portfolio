@@ -1,0 +1,10 @@
+[Inputs]
+=row[15:0]=
+=col[15:0]=
+[Outputs]
+paddle
+ball
+[BiDir]
+[ATTRIBUTES]
+VeriModel Paddle
+

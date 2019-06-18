@@ -1,0 +1,6 @@
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Paddle.v -lang verilog -prj Lab7 -o Paddle.spl -module Paddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Paddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Paddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Paddle.v -lang verilog -prj Lab7 -o Paddle.spl -module Paddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Paddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Paddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/Paddle.v -lang verilog -prj Lab7 -o Paddle.spl -module Paddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Paddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/Paddle.sym 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="ScorenTimer">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-3-3T1:40:15</timestamp>
+    <pin polarity="Input" x="0" y="-288" name="clk" />
+    <pin polarity="Input" x="0" y="-224" name="resettimer" />
+    <pin polarity="Input" x="0" y="-160" name="scoreincrement" />
+    <pin polarity="Input" x="0" y="-96" name="pb1" />
+    <pin polarity="Input" x="0" y="-32" name="loselife" />
+    <pin polarity="Output" x="416" y="-288" name="TC" />
+    <pin polarity="Output" x="416" y="-208" name="flash(7:0)" />
+    <pin polarity="Output" x="416" y="-128" name="score(7:0)" />
+    <pin polarity="Output" x="416" y="-48" name="lives(3:0)" />
+    <pin polarity="Input" x="0" y="96" name="timeframeCE" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="208" y="-328" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin clk" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin resettimer" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin scoreincrement" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin pb1" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin loselife" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="344" y="-288" type="pin TC" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="344" y="-208" type="pin flash(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="344" y="-128" type="pin score(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="344" y="-48" type="pin lives(3:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="96" type="pin timeframeCE" />
+        <line x2="0" y1="96" y2="96" x1="64" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <line x2="416" y1="-288" y2="-288" x1="352" />
+        <rect width="64" x="352" y="-220" height="24" />
+        <line x2="416" y1="-208" y2="-208" x1="352" />
+        <rect width="64" x="352" y="-140" height="24" />
+        <line x2="416" y1="-128" y2="-128" x1="352" />
+        <rect width="64" x="352" y="-60" height="24" />
+        <line x2="416" y1="-48" y2="-48" x1="352" />
+        <rect width="288" x="64" y="-320" height="448" />
+    </graph>
+</symbol>

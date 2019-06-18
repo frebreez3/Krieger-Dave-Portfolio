@@ -1,0 +1,9 @@
+[Inputs]
+clkin
+[Outputs]
+clkb2
+seldig
+[BiDir]
+[ATTRIBUTES]
+VeriModel clkcntrl4
+

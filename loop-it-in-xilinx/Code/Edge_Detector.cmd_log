@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym Edge_Detector C:/Users/dakriege/Desktop/Lab7/Lab7/Edge_Detector.sch C:/Users/dakriege/Desktop/Lab7/Lab7/Edge_Detector.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Edge_Detector C:/Users/dakriege/Desktop/Lab7/Lab7/Edge_Detector.sch C:/Users/dakriege/Desktop/Lab7/Lab7/Edge_Detector.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Edge_Detector C:/Users/dakriege/Desktop/Lab7/Lab7/Edge_Detector.sch C:/Users/dakriege/Desktop/Lab7/Lab7/Edge_Detector.sym 

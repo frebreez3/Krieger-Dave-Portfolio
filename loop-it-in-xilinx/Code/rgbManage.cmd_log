@@ -1,0 +1,4 @@
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/rgbManage.v -lang verilog -prj Lab7 -o rgbManage.spl -module rgbManage -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w rgbManage.spl C:/Users/dakriege/Desktop/Lab7/Lab7/rgbManage.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/rgbManage.v -lang verilog -prj Lab7 -o rgbManage.spl -module rgbManage -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w rgbManage.spl C:/Users/dakriege/Desktop/Lab7/Lab7/rgbManage.sym 

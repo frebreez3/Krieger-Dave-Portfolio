@@ -1,0 +1,68 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Ring_Counter.vf
+// /___/   /\     Timestamp : 03/03/2016 11:55:15
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/dakriege/Desktop/Lab7/Lab7/Ring_Counter.vf -w C:/Users/dakriege/Desktop/Lab7/Lab7/Ring_Counter.sch
+//Design Name: Ring_Counter
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Ring_Counter(Clock, 
+                    Enable, 
+                    an0, 
+                    an1, 
+                    an2, 
+                    an3);
+
+    input Clock;
+    input Enable;
+   output an0;
+   output an1;
+   output an2;
+   output an3;
+   
+   wire inv_an3;
+   wire XLXN_2;
+   wire an0_DUMMY;
+   wire an1_DUMMY;
+   wire an2_DUMMY;
+   wire an3_DUMMY;
+   
+   assign an0 = an0_DUMMY;
+   assign an1 = an1_DUMMY;
+   assign an2 = an2_DUMMY;
+   assign an3 = an3_DUMMY;
+   FDE #( .INIT(1'b0) ) XLXI_1 (.C(Clock), 
+               .CE(Enable), 
+               .D(inv_an3), 
+               .Q(XLXN_2));
+   FDE #( .INIT(1'b0) ) XLXI_2 (.C(Clock), 
+               .CE(Enable), 
+               .D(an0_DUMMY), 
+               .Q(an1_DUMMY));
+   FDE #( .INIT(1'b0) ) XLXI_3 (.C(Clock), 
+               .CE(Enable), 
+               .D(an1_DUMMY), 
+               .Q(an2_DUMMY));
+   FDE #( .INIT(1'b0) ) XLXI_4 (.C(Clock), 
+               .CE(Enable), 
+               .D(an2_DUMMY), 
+               .Q(an3_DUMMY));
+   INV  XLXI_5 (.I(an3_DUMMY), 
+               .O(inv_an3));
+   INV  XLXI_7 (.I(XLXN_2), 
+               .O(an0_DUMMY));
+endmodule

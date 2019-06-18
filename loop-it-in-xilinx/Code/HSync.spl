@@ -1,0 +1,14 @@
+[Inputs]
+Clk
+=row[15:0]=
+=column[15:0]=
+[Outputs]
+hsync
+vsync
+rgbboundries
+game_boundry
+carpet
+[BiDir]
+[ATTRIBUTES]
+VeriModel HSync
+

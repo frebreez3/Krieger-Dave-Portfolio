@@ -1,0 +1,16 @@
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.v -lang verilog -prj Lab7 -o FSMveri.spl -module FSMveri -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w FSMveri.spl C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.v -lang verilog -prj Lab7 -o FSMveri.spl -module FSMveri -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w FSMveri.spl C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.v -lang verilog -prj Lab7 -o FSMveri.spl -module FSMveri -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w FSMveri.spl C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.v -lang verilog -prj Lab7 -o FSMveri.spl -module FSMveri -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w FSMveri.spl C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.v -lang verilog -prj Lab7 -o FSMveri.spl -module FSMveri -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w FSMveri.spl C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.v -lang verilog -prj Lab7 -o FSMveri.spl -module FSMveri -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w FSMveri.spl C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.v -lang verilog -prj Lab7 -o FSMveri.spl -module FSMveri -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w FSMveri.spl C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.v -lang verilog -prj Lab7 -o FSMveri.spl -module FSMveri -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w FSMveri.spl C:/Users/dakriege/Desktop/Lab7/Lab7/FSMveri.sym 

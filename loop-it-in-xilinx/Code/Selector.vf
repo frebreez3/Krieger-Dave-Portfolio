@@ -1,0 +1,146 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Selector.vf
+// /___/   /\     Timestamp : 03/03/2016 11:55:16
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/dakriege/Desktop/Lab7/Lab7/Selector.vf -w C:/Users/dakriege/Desktop/Lab7/Lab7/Selector.sch
+//Design Name: Selector
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Selector(s0, 
+                s1, 
+                s2, 
+                s3, 
+                x, 
+                y);
+
+    input s0;
+    input s1;
+    input s2;
+    input s3;
+    input [15:0] x;
+   output [3:0] y;
+   
+   wire [15:12] a;
+   wire ain;
+   wire [11:8] b;
+   wire bin;
+   wire [7:4] c;
+   wire cin;
+   wire [3:0] d;
+   wire din;
+   wire inv_s0;
+   wire inv_s1;
+   wire inv_s2;
+   wire inv_s3;
+   
+   INV  XLXI_2 (.I(s3), 
+               .O(inv_s3));
+   INV  XLXI_3 (.I(s2), 
+               .O(inv_s2));
+   INV  XLXI_4 (.I(s1), 
+               .O(inv_s1));
+   INV  XLXI_5 (.I(s0), 
+               .O(inv_s0));
+   AND4  XLXI_6 (.I0(inv_s0), 
+                .I1(inv_s1), 
+                .I2(inv_s2), 
+                .I3(s3), 
+                .O(ain));
+   AND4  XLXI_7 (.I0(inv_s0), 
+                .I1(inv_s1), 
+                .I2(s2), 
+                .I3(inv_s3), 
+                .O(bin));
+   AND4  XLXI_8 (.I0(inv_s0), 
+                .I1(s1), 
+                .I2(inv_s2), 
+                .I3(inv_s3), 
+                .O(cin));
+   AND4  XLXI_9 (.I0(s0), 
+                .I1(inv_s1), 
+                .I2(inv_s2), 
+                .I3(inv_s3), 
+                .O(din));
+   AND2  XLXI_10_12 (.I0(ain), 
+                    .I1(x[12]), 
+                    .O(a[12]));
+   AND2  XLXI_10_13 (.I0(ain), 
+                    .I1(x[13]), 
+                    .O(a[13]));
+   AND2  XLXI_10_14 (.I0(ain), 
+                    .I1(x[14]), 
+                    .O(a[14]));
+   AND2  XLXI_10_15 (.I0(ain), 
+                    .I1(x[15]), 
+                    .O(a[15]));
+   AND2  XLXI_14_8 (.I0(bin), 
+                   .I1(x[8]), 
+                   .O(b[8]));
+   AND2  XLXI_14_9 (.I0(bin), 
+                   .I1(x[9]), 
+                   .O(b[9]));
+   AND2  XLXI_14_10 (.I0(bin), 
+                    .I1(x[10]), 
+                    .O(b[10]));
+   AND2  XLXI_14_11 (.I0(bin), 
+                    .I1(x[11]), 
+                    .O(b[11]));
+   AND2  XLXI_15_4 (.I0(cin), 
+                   .I1(x[4]), 
+                   .O(c[4]));
+   AND2  XLXI_15_5 (.I0(cin), 
+                   .I1(x[5]), 
+                   .O(c[5]));
+   AND2  XLXI_15_6 (.I0(cin), 
+                   .I1(x[6]), 
+                   .O(c[6]));
+   AND2  XLXI_15_7 (.I0(cin), 
+                   .I1(x[7]), 
+                   .O(c[7]));
+   AND2  XLXI_16_0 (.I0(din), 
+                   .I1(x[0]), 
+                   .O(d[0]));
+   AND2  XLXI_16_1 (.I0(din), 
+                   .I1(x[1]), 
+                   .O(d[1]));
+   AND2  XLXI_16_2 (.I0(din), 
+                   .I1(x[2]), 
+                   .O(d[2]));
+   AND2  XLXI_16_3 (.I0(din), 
+                   .I1(x[3]), 
+                   .O(d[3]));
+   OR4  XLXI_17_0 (.I0(d[0]), 
+                  .I1(c[4]), 
+                  .I2(b[8]), 
+                  .I3(a[12]), 
+                  .O(y[0]));
+   OR4  XLXI_17_1 (.I0(d[1]), 
+                  .I1(c[5]), 
+                  .I2(b[9]), 
+                  .I3(a[13]), 
+                  .O(y[1]));
+   OR4  XLXI_17_2 (.I0(d[2]), 
+                  .I1(c[6]), 
+                  .I2(b[10]), 
+                  .I3(a[14]), 
+                  .O(y[2]));
+   OR4  XLXI_17_3 (.I0(d[3]), 
+                  .I1(c[7]), 
+                  .I2(b[11]), 
+                  .I3(a[15]), 
+                  .O(y[3]));
+endmodule

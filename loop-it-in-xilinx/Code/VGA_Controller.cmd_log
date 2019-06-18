@@ -1,0 +1,26 @@
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.v -lang verilog -prj Lab7 -o VGA_Controller.spl -module VGA_Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VGA_Controller.spl C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.v -lang verilog -prj Lab7 -o VGA_Controller.spl -module VGA_Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VGA_Controller.spl C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.v -lang verilog -prj Lab7 -o VGA_Controller.spl -module VGA_Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VGA_Controller.spl C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.v -lang verilog -prj Lab7 -o VGA_Controller.spl -module VGA_Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VGA_Controller.spl C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.v -lang verilog -prj Lab7 -o VGA_Controller.spl -module VGA_Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VGA_Controller.spl C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.v -lang verilog -prj Lab7 -o VGA_Controller.spl -module VGA_Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VGA_Controller.spl C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.v -lang verilog -prj Lab7 -o VGA_Controller.spl -module VGA_Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VGA_Controller.spl C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.v -lang verilog -prj Lab7 -o VGA_Controller.spl -module VGA_Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VGA_Controller.spl C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.v -lang verilog -prj Lab7 -o VGA_Controller.spl -module VGA_Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VGA_Controller.spl C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.v -lang verilog -prj Lab7 -o VGA_Controller.spl -module VGA_Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VGA_Controller.spl C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.v -lang verilog -prj Lab7 -o VGA_Controller.spl -module VGA_Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VGA_Controller.spl C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.v -lang verilog -prj Lab7 -o VGA_Controller.spl -module VGA_Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VGA_Controller.spl C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.v -lang verilog -prj Lab7 -o VGA_Controller.spl -module VGA_Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VGA_Controller.spl C:/Users/dakriege/Desktop/Lab7/Lab7/VGA_Controller.sym 

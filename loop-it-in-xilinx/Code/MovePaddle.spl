@@ -1,0 +1,17 @@
+[Inputs]
+frame
+frame2
+=row[15:0]=
+=col[15:0]=
+=paddlecol[15:0]=
+=paddlerow[15:0]=
+[Outputs]
+padcolce
+padrowce
+paddle
+paddlescore
+paddlegone
+[BiDir]
+[ATTRIBUTES]
+VeriModel MovePaddle
+

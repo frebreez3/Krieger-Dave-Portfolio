@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym scoredetect C:/Users/dakriege/Desktop/Lab7/Lab7/scoredetect.sch C:/Users/dakriege/Desktop/Lab7/Lab7/scoredetect.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym scoredetect C:/Users/dakriege/Desktop/Lab7/Lab7/scoredetect.sch C:/Users/dakriege/Desktop/Lab7/Lab7/scoredetect.sym 

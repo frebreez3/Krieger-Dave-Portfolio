@@ -1,0 +1,9 @@
+[Inputs]
+paddle
+ball
+[Outputs]
+collision
+[BiDir]
+[ATTRIBUTES]
+VeriModel Collision
+

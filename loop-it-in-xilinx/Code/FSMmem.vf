@@ -1,0 +1,105 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : FSMmem.vf
+// /___/   /\     Timestamp : 03/03/2016 11:55:09
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/dakriege/Desktop/Lab7/Lab7/FSMmem.vf -w C:/Users/dakriege/Desktop/Lab7/Lab7/FSMmem.sch
+//Design Name: FSMmem
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FSMmem(clk, 
+              collision, 
+              foursec, 
+              lives, 
+              paddlegone, 
+              pb1, 
+              pb2, 
+              decrementlife, 
+              loadlives, 
+              moveball, 
+              movecarp, 
+              movepad, 
+              paddlehide, 
+              resetpos, 
+              resettimer, 
+              timeCE);
+
+    input clk;
+    input collision;
+    input foursec;
+    input [1:0] lives;
+    input paddlegone;
+    input pb1;
+    input pb2;
+   output decrementlife;
+   output loadlives;
+   output moveball;
+   output movecarp;
+   output movepad;
+   output paddlehide;
+   output resetpos;
+   output resettimer;
+   output timeCE;
+   
+   wire [5:0] D;
+   wire [5:0] Q;
+   wire XLXN_85;
+   wire XLXN_102;
+   wire XLXN_103;
+   
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(clk), 
+              .D(XLXN_102), 
+              .Q(XLXN_103));
+   FD #( .INIT(1'b0) ) XLXI_2 (.C(clk), 
+              .D(D[1]), 
+              .Q(Q[1]));
+   FD #( .INIT(1'b0) ) XLXI_3 (.C(clk), 
+              .D(D[2]), 
+              .Q(Q[2]));
+   FD #( .INIT(1'b0) ) XLXI_4 (.C(clk), 
+              .D(D[4]), 
+              .Q(Q[4]));
+   FD #( .INIT(1'b0) ) XLXI_5 (.C(clk), 
+              .D(D[3]), 
+              .Q(Q[3]));
+   FD #( .INIT(1'b0) ) XLXI_6 (.C(clk), 
+              .D(D[5]), 
+              .Q(Q[5]));
+   AND2B2  XLXI_11 (.I0(lives[0]), 
+                   .I1(lives[1]), 
+                   .O(XLXN_85));
+   INV  XLXI_12 (.I(D[0]), 
+                .O(XLXN_102));
+   INV  XLXI_13 (.I(XLXN_103), 
+                .O(Q[0]));
+   FSMveri  XLXI_17 (.collision(collision), 
+                    .foursec(foursec), 
+                    .nolives(XLXN_85), 
+                    .paddlegone(paddlegone), 
+                    .pb1(pb1), 
+                    .pb2(pb2), 
+                    .PS(Q[5:0]), 
+                    .decrementlives(decrementlife), 
+                    .loadlives(loadlives), 
+                    .moveball(moveball), 
+                    .movecarpet(movecarp), 
+                    .movepaddle(movepad), 
+                    .NS(D[5:0]), 
+                    .paddlehide(paddlehide), 
+                    .resetpositions(resetpos), 
+                    .resettimer(resettimer), 
+                    .timecount(timeCE));
+endmodule

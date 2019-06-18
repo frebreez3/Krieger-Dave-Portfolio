@@ -1,0 +1,15 @@
+[Inputs]
+=row[15:0]=
+=col[15:0]=
+[Outputs]
+rgbbound
+gamebound
+hsync
+vsync
+hreset
+vreset
+carpet
+[BiDir]
+[ATTRIBUTES]
+VeriModel VGA_Controller
+

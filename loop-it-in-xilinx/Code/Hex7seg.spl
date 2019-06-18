@@ -1,0 +1,8 @@
+[Inputs]
+=n[3:0]=
+[Outputs]
+=led_out[6:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Hex7seg
+

@@ -1,0 +1,3046 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "VGA_Controller.v" in library work
+Compiling verilog file "scoredetect.vf" in library work
+Module <VGA_Controller> compiled
+Compiling verilog file "MovePaddle.v" in library work
+Module <scoredetect> compiled
+Compiling verilog file "FSMveri.v" in library work
+Module <MovePaddle> compiled
+Compiling verilog file "Edge_Detector.vf" in library work
+Module <FSMveri> compiled
+Compiling verilog file "Carpetmove.v" in library work
+Module <Edge_Detector> compiled
+Compiling verilog file "Ball.v" in library work
+Module <Carpetmove> compiled
+Compiling verilog file "Selector.vf" in library work
+Module <Ball> compiled
+Compiling verilog file "ScorenTimer.vf" in library work
+Module <Selector> compiled
+Module <M2_1B1_MXILINX_ScorenTimer> compiled
+Module <M2_1_MXILINX_ScorenTimer> compiled
+Module <FTCLEX_MXILINX_ScorenTimer> compiled
+Module <CB4CLED_MXILINX_ScorenTimer> compiled
+Module <FTCE_MXILINX_ScorenTimer> compiled
+Module <CB8CE_MXILINX_ScorenTimer> compiled
+Compiling verilog file "Ring_Counter.vf" in library work
+Module <ScorenTimer> compiled
+Compiling verilog file "Pixels.vf" in library work
+Module <Ring_Counter> compiled
+Module <M2_1B1_MXILINX_Pixels> compiled
+Module <M2_1_MXILINX_Pixels> compiled
+Module <FTCLEX_MXILINX_Pixels> compiled
+Module <CB16CLED_MXILINX_Pixels> compiled
+Module <FTCE_MXILINX_Pixels> compiled
+Module <CB16CE_MXILINX_Pixels> compiled
+Module <CB8CE_MXILINX_Pixels> compiled
+Module <scoredetect_MUSER_Pixels> compiled
+Module <Edge_Detector_MUSER_Pixels> compiled
+Module <FTRSE_MXILINX_Pixels> compiled
+Module <CB16RE_MXILINX_Pixels> compiled
+Compiling verilog file "Hex7seg.v" in library work
+Module <Pixels> compiled
+Compiling verilog file "FSMmem.vf" in library work
+Module <Hex7seg> compiled
+Compiling verilog file "collisionedge.vf" in library work
+Module <FSMmem> compiled
+Compiling verilog file "clkcntrl4.v" in library work
+Module <collisionedge> compiled
+Module <FTCE_MXILINX_clkcntrl4> compiled
+Module <CB4CE_MXILINX_clkcntrl4> compiled
+Compiling verilog file "Top.vf" in library work
+Module <clkcntrl4> compiled
+Module <FSMmem_MUSER_Top> compiled
+Module <M2_1B1_MXILINX_Top> compiled
+Module <M2_1_MXILINX_Top> compiled
+Module <FTCLEX_MXILINX_Top> compiled
+Module <CB4CLED_MXILINX_Top> compiled
+Module <FTCE_MXILINX_Top> compiled
+Module <CB8CE_MXILINX_Top> compiled
+Module <ScorenTimer_MUSER_Top> compiled
+Module <CB16CLED_MXILINX_Top> compiled
+Module <CB16CE_MXILINX_Top> compiled
+Module <scoredetect_MUSER_Top> compiled
+Module <Edge_Detector_MUSER_Top> compiled
+Module <FTRSE_MXILINX_Top> compiled
+Module <CB16RE_MXILINX_Top> compiled
+Module <Pixels_MUSER_Top> compiled
+Module <collisionedge_MUSER_Top> compiled
+Module <Selector_MUSER_Top> compiled
+Module <Ring_Counter_MUSER_Top> compiled
+Compiling verilog file "LFSR_RNG.vf" in library work
+Module <Top> compiled
+Module <LFSR_RNG> compiled
+No errors in compilation
+Analysis of file <"Top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Top> in library <work>.
+
+Analyzing hierarchy for module <Hex7seg> in library <work>.
+
+Analyzing hierarchy for module <Ring_Counter_MUSER_Top> in library <work>.
+
+Analyzing hierarchy for module <Selector_MUSER_Top> in library <work>.
+
+Analyzing hierarchy for module <clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <collisionedge_MUSER_Top> in library <work>.
+
+Analyzing hierarchy for module <Pixels_MUSER_Top> in library <work>.
+
+Analyzing hierarchy for module <ScorenTimer_MUSER_Top> in library <work>.
+
+Analyzing hierarchy for module <FSMmem_MUSER_Top> in library <work>.
+
+Analyzing hierarchy for module <CB4CE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <CB4CE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <CB4CE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <CB4CE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <CB16RE_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <CB16RE_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <CB16CLED_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <CB16CLED_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <CB16CLED_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <CB16CLED_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <Ball> in library <work>.
+
+Analyzing hierarchy for module <Edge_Detector_MUSER_Top> in library <work>.
+
+Analyzing hierarchy for module <MovePaddle> in library <work>.
+
+Analyzing hierarchy for module <scoredetect_MUSER_Top> in library <work>.
+
+Analyzing hierarchy for module <CB8CE_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <VGA_Controller> in library <work>.
+
+Analyzing hierarchy for module <CB16CE_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <Carpetmove> in library <work>.
+
+Analyzing hierarchy for module <CB8CE_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <CB4CLED_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <CB8CE_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <FSMveri> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_clkcntrl4> in library <work>.
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1B1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCE_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_Top> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1B1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_Top> in library <work>.
+
+WARNING:Xst:2591 - "Top.vf" line 2224: attribute on instance <IBUF_DELAY_VALUE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2224: attribute on instance <IFD_DELAY_VALUE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2224: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2234: attribute on instance <IBUF_DELAY_VALUE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2234: attribute on instance <IFD_DELAY_VALUE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2234: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2238: attribute on instance <IBUF_DELAY_VALUE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2238: attribute on instance <IFD_DELAY_VALUE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2238: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2312: attribute on instance <IBUF_DELAY_VALUE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2312: attribute on instance <IFD_DELAY_VALUE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2312: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2141: attribute on instance <IBUF_DELAY_VALUE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2141: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2148: attribute on instance <IBUF_DELAY_VALUE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2148: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2151: attribute on instance <IBUF_DELAY_VALUE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2151: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2154: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2154: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2154: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2157: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2157: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2157: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2160: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2160: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2160: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2163: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2163: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2163: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2166: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2166: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2166: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2169: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2169: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2169: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2172: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2172: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2172: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2175: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2175: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2175: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2178: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2178: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2178: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2181: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2181: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2181: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2184: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2184: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2184: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2187: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2187: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2187: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2197: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2197: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2197: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2200: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2200: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2200: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2203: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2203: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2203: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2206: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2206: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2206: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2209: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2209: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2209: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2212: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2212: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2212: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2215: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2215: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2215: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2218: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2218: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2218: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2227: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2227: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2227: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2230: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2230: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2230: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2315: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2315: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2315: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2318: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2318: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2318: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2321: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2321: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2321: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2327: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2327: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Top.vf" line 2327: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Top>.
+WARNING:Xst:852 - "Top.vf" line 2263: Unconnected input port 'hidepaddle' of instance 'XLXI_267' is tied to GND.
+Module <Top> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_33> in unit <Top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <XLXI_33> in unit <Top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <XLXI_33> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_33> in unit <Top>.
+    Set user-defined property "CLK_SEL_TYPE =  SYNC" for instance <XLXI_35> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_38> in unit <Top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <XLXI_38> in unit <Top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <XLXI_38> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_38> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_40> in unit <Top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <XLXI_40> in unit <Top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <XLXI_40> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_40> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_41> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_41> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_41> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_41> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_42> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_42> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_42> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_42> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_43> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_43> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_43> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_43> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_45> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_45> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_45> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_45> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_46> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_46> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_46> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_46> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_47> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_47> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_47> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_47> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_48> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_48> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_48> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_48> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_49> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_49> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_49> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_49> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_50> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_50> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_50> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_50> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_51> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_51> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_51> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_51> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_52> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_52> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_52> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_52> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_53> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_53> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_53> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_53> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_128> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_128> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_128> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_128> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_129> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_129> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_129> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_129> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_130> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_130> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_130> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_130> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_133> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_133> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_133> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_133> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_134> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_134> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_134> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_134> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_135> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_135> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_135> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_135> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_136> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_136> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_136> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_136> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_137> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_137> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_137> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_137> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_164> in unit <Top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <XLXI_164> in unit <Top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <XLXI_164> in unit <Top>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <XLXI_164> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_164> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_195> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_195> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_195> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_195> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_196> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_196> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_196> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_196> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_226> in unit <Top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <XLXI_226> in unit <Top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <XLXI_226> in unit <Top>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <XLXI_226> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_226> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_227> in unit <Top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <XLXI_227> in unit <Top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <XLXI_227> in unit <Top>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <XLXI_227> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_227> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_276> in unit <Top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <XLXI_276> in unit <Top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <XLXI_276> in unit <Top>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <XLXI_276> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_276> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_279> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_279> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_279> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_279> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_280> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_280> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_280> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_280> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_281> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_281> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_281> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_281> in unit <Top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_283> in unit <Top>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_283> in unit <Top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_283> in unit <Top>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_283> in unit <Top>.
+    Set user-defined property "LOC =  M6" for signal <betterclk> in unit <Top>.
+    Set user-defined property "LOC =  B8" for signal <clkin> in unit <Top>.
+    Set user-defined property "LOC =  A7" for signal <gsr> in unit <Top>.
+    Set user-defined property "LOC =  G12" for signal <peebs0> in unit <Top>.
+    Set user-defined property "LOC =  C11" for signal <peebs1> in unit <Top>.
+    Set user-defined property "LOC =  M4" for signal <peebs2> in unit <Top>.
+    Set user-defined property "LOC =  N3" for signal <switch7> in unit <Top>.
+    Set user-defined property "LOC =  F12" for signal <an0> in unit <Top>.
+    Set user-defined property "LOC =  J12" for signal <an1> in unit <Top>.
+    Set user-defined property "LOC =  M13" for signal <an2> in unit <Top>.
+    Set user-defined property "LOC =  K14" for signal <an3> in unit <Top>.
+    Set user-defined property "LOC =  H13" for signal <Blu1> in unit <Top>.
+    Set user-defined property "LOC =  J13" for signal <Blu2> in unit <Top>.
+    Set user-defined property "LOC =  L14" for signal <ca> in unit <Top>.
+    Set user-defined property "LOC =  H12" for signal <cb> in unit <Top>.
+    Set user-defined property "LOC =  N14" for signal <cc> in unit <Top>.
+    Set user-defined property "LOC =  N11" for signal <cd> in unit <Top>.
+    Set user-defined property "LOC =  P12" for signal <ce> in unit <Top>.
+    Set user-defined property "LOC =  L13" for signal <cf> in unit <Top>.
+    Set user-defined property "LOC =  M12" for signal <cg> in unit <Top>.
+    Set user-defined property "LOC =  N13" for signal <dp> in unit <Top>.
+    Set user-defined property "LOC =  F14" for signal <Grn0> in unit <Top>.
+    Set user-defined property "LOC =  G13" for signal <Grn1> in unit <Top>.
+    Set user-defined property "LOC =  G14" for signal <Grn2> in unit <Top>.
+    Set user-defined property "LOC =  J14" for signal <HS> in unit <Top>.
+    Set user-defined property "LOC =  C14" for signal <Red0> in unit <Top>.
+    Set user-defined property "LOC =  D13" for signal <Red1> in unit <Top>.
+    Set user-defined property "LOC =  F13" for signal <Red2> in unit <Top>.
+    Set user-defined property "LOC =  K13" for signal <VS> in unit <Top>.
+    Set user-defined property "LOC =  M5" for signal <XLXN_670> in unit <Top>.
+    Set user-defined property "LOC =  M11" for signal <XLXN_672> in unit <Top>.
+    Set user-defined property "LOC =  P7" for signal <XLXN_674> in unit <Top>.
+    Set user-defined property "LOC =  P6" for signal <XLXN_688> in unit <Top>.
+Analyzing module <Hex7seg> in library <work>.
+Module <Hex7seg> is correct for synthesis.
+ 
+Analyzing module <Ring_Counter_MUSER_Top> in library <work>.
+Module <Ring_Counter_MUSER_Top> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_1> in unit <Ring_Counter_MUSER_Top>.
+    Set user-defined property "INIT =  0" for instance <XLXI_2> in unit <Ring_Counter_MUSER_Top>.
+    Set user-defined property "INIT =  0" for instance <XLXI_3> in unit <Ring_Counter_MUSER_Top>.
+    Set user-defined property "INIT =  0" for instance <XLXI_4> in unit <Ring_Counter_MUSER_Top>.
+Analyzing module <Selector_MUSER_Top> in library <work>.
+Module <Selector_MUSER_Top> is correct for synthesis.
+ 
+Analyzing module <clkcntrl4> in library <work>.
+Module <clkcntrl4> is correct for synthesis.
+ 
+    Set user-defined property "CLKDV_DIVIDE =  2.000000" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "CLKIN_PERIOD =  20.000000" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <XLXI_36> in unit <clkcntrl4>.
+    Set user-defined property "HU_SET =  XLXI_37_4" for instance <XLXI_37> in unit <clkcntrl4>.
+    Set user-defined property "HU_SET =  XLXI_38_5" for instance <XLXI_38> in unit <clkcntrl4>.
+    Set user-defined property "HU_SET =  XLXI_39_6" for instance <XLXI_39> in unit <clkcntrl4>.
+    Set user-defined property "HU_SET =  XLXI_40_7" for instance <XLXI_40> in unit <clkcntrl4>.
+Analyzing module <CB4CE_MXILINX_clkcntrl4.1> in library <work>.
+Module <CB4CE_MXILINX_clkcntrl4.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_0" for instance <I_Q0> in unit <CB4CE_MXILINX_clkcntrl4.1>.
+    Set user-defined property "HU_SET =  I_Q1_1" for instance <I_Q1> in unit <CB4CE_MXILINX_clkcntrl4.1>.
+    Set user-defined property "HU_SET =  I_Q2_2" for instance <I_Q2> in unit <CB4CE_MXILINX_clkcntrl4.1>.
+    Set user-defined property "HU_SET =  I_Q3_3" for instance <I_Q3> in unit <CB4CE_MXILINX_clkcntrl4.1>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.1> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.1>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.2> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.2>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.3> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.3> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.3>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.3>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.4> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.4>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.4>.
+Analyzing module <CB4CE_MXILINX_clkcntrl4.2> in library <work>.
+Module <CB4CE_MXILINX_clkcntrl4.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_0" for instance <I_Q0> in unit <CB4CE_MXILINX_clkcntrl4.2>.
+    Set user-defined property "HU_SET =  I_Q1_1" for instance <I_Q1> in unit <CB4CE_MXILINX_clkcntrl4.2>.
+    Set user-defined property "HU_SET =  I_Q2_2" for instance <I_Q2> in unit <CB4CE_MXILINX_clkcntrl4.2>.
+    Set user-defined property "HU_SET =  I_Q3_3" for instance <I_Q3> in unit <CB4CE_MXILINX_clkcntrl4.2>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.5> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.5>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.5>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.6> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.6> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.6>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.6>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.7> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.7> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.7>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.7>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.8> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.8> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.8>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.8>.
+Analyzing module <CB4CE_MXILINX_clkcntrl4.3> in library <work>.
+Module <CB4CE_MXILINX_clkcntrl4.3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_0" for instance <I_Q0> in unit <CB4CE_MXILINX_clkcntrl4.3>.
+    Set user-defined property "HU_SET =  I_Q1_1" for instance <I_Q1> in unit <CB4CE_MXILINX_clkcntrl4.3>.
+    Set user-defined property "HU_SET =  I_Q2_2" for instance <I_Q2> in unit <CB4CE_MXILINX_clkcntrl4.3>.
+    Set user-defined property "HU_SET =  I_Q3_3" for instance <I_Q3> in unit <CB4CE_MXILINX_clkcntrl4.3>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.9> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.9> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.9>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.9>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.10> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.10> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.10>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.10>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.11> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.11> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.11>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.11>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.12> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.12> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.12>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.12>.
+Analyzing module <CB4CE_MXILINX_clkcntrl4.4> in library <work>.
+Module <CB4CE_MXILINX_clkcntrl4.4> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_0" for instance <I_Q0> in unit <CB4CE_MXILINX_clkcntrl4.4>.
+    Set user-defined property "HU_SET =  I_Q1_1" for instance <I_Q1> in unit <CB4CE_MXILINX_clkcntrl4.4>.
+    Set user-defined property "HU_SET =  I_Q2_2" for instance <I_Q2> in unit <CB4CE_MXILINX_clkcntrl4.4>.
+    Set user-defined property "HU_SET =  I_Q3_3" for instance <I_Q3> in unit <CB4CE_MXILINX_clkcntrl4.4>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.13> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.13> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.13>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.13>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.14> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.14> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.14>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.14>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.15> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.15> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.15>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.15>.
+Analyzing module <FTCE_MXILINX_clkcntrl4.16> in library <work>.
+Module <FTCE_MXILINX_clkcntrl4.16> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.16>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_clkcntrl4.16>.
+Analyzing module <collisionedge_MUSER_Top> in library <work>.
+Module <collisionedge_MUSER_Top> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_446> in unit <collisionedge_MUSER_Top>.
+    Set user-defined property "INIT =  0" for instance <XLXI_458> in unit <collisionedge_MUSER_Top>.
+    Set user-defined property "INIT =  0" for instance <XLXI_459> in unit <collisionedge_MUSER_Top>.
+Analyzing module <Pixels_MUSER_Top> in library <work>.
+WARNING:Xst:852 - "Top.vf" line 1673: Unconnected input port 'CLR' of instance 'XLXI_464' is tied to GND.
+Module <Pixels_MUSER_Top> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_298_259" for instance <XLXI_298> in unit <Pixels_MUSER_Top>.
+    Set user-defined property "HU_SET =  XLXI_319_260" for instance <XLXI_319> in unit <Pixels_MUSER_Top>.
+    Set user-defined property "HU_SET =  XLXI_337_264" for instance <XLXI_337> in unit <Pixels_MUSER_Top>.
+    Set user-defined property "HU_SET =  XLXI_340_263" for instance <XLXI_340> in unit <Pixels_MUSER_Top>.
+    Set user-defined property "HU_SET =  XLXI_464_261" for instance <XLXI_464> in unit <Pixels_MUSER_Top>.
+    Set user-defined property "HU_SET =  XLXI_482_262" for instance <XLXI_482> in unit <Pixels_MUSER_Top>.
+    Set user-defined property "HU_SET =  XLXI_55_258" for instance <XLXI_55> in unit <Pixels_MUSER_Top>.
+    Set user-defined property "HU_SET =  XLXI_57_257" for instance <XLXI_57> in unit <Pixels_MUSER_Top>.
+Analyzing module <CB16RE_MXILINX_Top.1> in library <work>.
+Module <CB16RE_MXILINX_Top.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_256" for instance <I_Q0> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q1_255" for instance <I_Q1> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q10_243" for instance <I_Q10> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q11_244" for instance <I_Q11> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q12_245" for instance <I_Q12> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q13_246" for instance <I_Q13> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q14_247" for instance <I_Q14> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q15_248" for instance <I_Q15> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q2_254" for instance <I_Q2> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q3_253" for instance <I_Q3> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q4_252" for instance <I_Q4> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q5_251" for instance <I_Q5> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q6_250" for instance <I_Q6> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q7_249" for instance <I_Q7> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q8_241" for instance <I_Q8> in unit <CB16RE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q9_242" for instance <I_Q9> in unit <CB16RE_MXILINX_Top.1>.
+Analyzing module <FTRSE_MXILINX_Top.1> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.1>.
+Analyzing module <FTRSE_MXILINX_Top.2> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.2>.
+Analyzing module <FTRSE_MXILINX_Top.3> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.3> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.3>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.3>.
+Analyzing module <FTRSE_MXILINX_Top.4> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.4>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.4>.
+Analyzing module <FTRSE_MXILINX_Top.5> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.5>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.5>.
+Analyzing module <FTRSE_MXILINX_Top.6> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.6> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.6>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.6>.
+Analyzing module <FTRSE_MXILINX_Top.7> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.7> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.7>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.7>.
+Analyzing module <FTRSE_MXILINX_Top.8> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.8> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.8>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.8>.
+Analyzing module <FTRSE_MXILINX_Top.9> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.9> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.9>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.9>.
+Analyzing module <FTRSE_MXILINX_Top.10> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.10> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.10>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.10>.
+Analyzing module <FTRSE_MXILINX_Top.11> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.11> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.11>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.11>.
+Analyzing module <FTRSE_MXILINX_Top.12> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.12> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.12>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.12>.
+Analyzing module <FTRSE_MXILINX_Top.13> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.13> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.13>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.13>.
+Analyzing module <FTRSE_MXILINX_Top.14> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.14> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.14>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.14>.
+Analyzing module <FTRSE_MXILINX_Top.15> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.15> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.15>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.15>.
+Analyzing module <FTRSE_MXILINX_Top.16> in library <work>.
+	INIT = 1'b0
+Module <FTRSE_MXILINX_Top.16> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.16>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Top.16>.
+Analyzing module <CB16RE_MXILINX_Top.2> in library <work>.
+Module <CB16RE_MXILINX_Top.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_256" for instance <I_Q0> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q1_255" for instance <I_Q1> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q10_243" for instance <I_Q10> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q11_244" for instance <I_Q11> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q12_245" for instance <I_Q12> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q13_246" for instance <I_Q13> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q14_247" for instance <I_Q14> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q15_248" for instance <I_Q15> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q2_254" for instance <I_Q2> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q3_253" for instance <I_Q3> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q4_252" for instance <I_Q4> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q5_251" for instance <I_Q5> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q6_250" for instance <I_Q6> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q7_249" for instance <I_Q7> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q8_241" for instance <I_Q8> in unit <CB16RE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q9_242" for instance <I_Q9> in unit <CB16RE_MXILINX_Top.2>.
+Analyzing module <CB16CLED_MXILINX_Top.1> in library <work>.
+Module <CB16CLED_MXILINX_Top.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_206" for instance <I_Q0> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q1_205" for instance <I_Q1> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q10_196" for instance <I_Q10> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q11_195" for instance <I_Q11> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q12_194" for instance <I_Q12> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q13_193" for instance <I_Q13> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q14_208" for instance <I_Q14> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q15_207" for instance <I_Q15> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q2_204" for instance <I_Q2> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q3_203" for instance <I_Q3> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q4_202" for instance <I_Q4> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q5_201" for instance <I_Q5> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q6_200" for instance <I_Q6> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q7_199" for instance <I_Q7> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q8_198" for instance <I_Q8> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q9_197" for instance <I_Q9> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T1_224" for instance <I_T1> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T10_211" for instance <I_T10> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T11_212" for instance <I_T11> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T12_213" for instance <I_T12> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T13_214" for instance <I_T13> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T14_215" for instance <I_T14> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T15_216" for instance <I_T15> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T2_219" for instance <I_T2> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T3_218" for instance <I_T3> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T4_217" for instance <I_T4> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T5_220" for instance <I_T5> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T6_222" for instance <I_T6> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T7_221" for instance <I_T7> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T8_209" for instance <I_T8> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_T9_210" for instance <I_T9> in unit <CB16CLED_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_TC_223" for instance <I_TC> in unit <CB16CLED_MXILINX_Top.1>.
+Analyzing module <FTCLEX_MXILINX_Top.1> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.1>.
+Analyzing module <M2_1_MXILINX_Top.19> in library <work>.
+Module <M2_1_MXILINX_Top.19> is correct for synthesis.
+ 
+Analyzing module <FTCLEX_MXILINX_Top.2> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.2>.
+Analyzing module <FTCLEX_MXILINX_Top.3> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.3> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.3>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.3>.
+Analyzing module <FTCLEX_MXILINX_Top.4> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.4>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.4>.
+Analyzing module <FTCLEX_MXILINX_Top.5> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.5>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.5>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.5>.
+Analyzing module <FTCLEX_MXILINX_Top.6> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.6> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.6>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.6>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.6>.
+Analyzing module <FTCLEX_MXILINX_Top.7> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.7> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.7>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.7>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.7>.
+Analyzing module <FTCLEX_MXILINX_Top.8> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.8> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.8>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.8>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.8>.
+Analyzing module <FTCLEX_MXILINX_Top.9> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.9> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.9>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.9>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.9>.
+Analyzing module <FTCLEX_MXILINX_Top.10> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.10> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.10>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.10>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.10>.
+Analyzing module <FTCLEX_MXILINX_Top.11> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.11> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.11>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.11>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.11>.
+Analyzing module <FTCLEX_MXILINX_Top.12> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.12> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.12>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.12>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.12>.
+Analyzing module <FTCLEX_MXILINX_Top.13> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.13> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.13>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.13>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.13>.
+Analyzing module <FTCLEX_MXILINX_Top.14> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.14> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.14>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.14>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.14>.
+Analyzing module <FTCLEX_MXILINX_Top.15> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.15> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.15>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.15>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.15>.
+Analyzing module <FTCLEX_MXILINX_Top.16> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.16> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.16>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.16>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.16>.
+Analyzing module <M2_1_MXILINX_Top.1> in library <work>.
+Module <M2_1_MXILINX_Top.1> is correct for synthesis.
+ 
+Analyzing module <M2_1B1_MXILINX_Top.1> in library <work>.
+Module <M2_1B1_MXILINX_Top.1> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.2> in library <work>.
+Module <M2_1_MXILINX_Top.2> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.3> in library <work>.
+Module <M2_1_MXILINX_Top.3> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.4> in library <work>.
+Module <M2_1_MXILINX_Top.4> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.5> in library <work>.
+Module <M2_1_MXILINX_Top.5> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.6> in library <work>.
+Module <M2_1_MXILINX_Top.6> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.7> in library <work>.
+Module <M2_1_MXILINX_Top.7> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.8> in library <work>.
+Module <M2_1_MXILINX_Top.8> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.9> in library <work>.
+Module <M2_1_MXILINX_Top.9> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.10> in library <work>.
+Module <M2_1_MXILINX_Top.10> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.11> in library <work>.
+Module <M2_1_MXILINX_Top.11> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.12> in library <work>.
+Module <M2_1_MXILINX_Top.12> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.13> in library <work>.
+Module <M2_1_MXILINX_Top.13> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.14> in library <work>.
+Module <M2_1_MXILINX_Top.14> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.15> in library <work>.
+Module <M2_1_MXILINX_Top.15> is correct for synthesis.
+ 
+Analyzing module <CB16CLED_MXILINX_Top.2> in library <work>.
+Module <CB16CLED_MXILINX_Top.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_206" for instance <I_Q0> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q1_205" for instance <I_Q1> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q10_196" for instance <I_Q10> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q11_195" for instance <I_Q11> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q12_194" for instance <I_Q12> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q13_193" for instance <I_Q13> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q14_208" for instance <I_Q14> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q15_207" for instance <I_Q15> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q2_204" for instance <I_Q2> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q3_203" for instance <I_Q3> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q4_202" for instance <I_Q4> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q5_201" for instance <I_Q5> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q6_200" for instance <I_Q6> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q7_199" for instance <I_Q7> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q8_198" for instance <I_Q8> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q9_197" for instance <I_Q9> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T1_224" for instance <I_T1> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T10_211" for instance <I_T10> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T11_212" for instance <I_T11> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T12_213" for instance <I_T12> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T13_214" for instance <I_T13> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T14_215" for instance <I_T14> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T15_216" for instance <I_T15> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T2_219" for instance <I_T2> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T3_218" for instance <I_T3> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T4_217" for instance <I_T4> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T5_220" for instance <I_T5> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T6_222" for instance <I_T6> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T7_221" for instance <I_T7> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T8_209" for instance <I_T8> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_T9_210" for instance <I_T9> in unit <CB16CLED_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_TC_223" for instance <I_TC> in unit <CB16CLED_MXILINX_Top.2>.
+Analyzing module <CB16CLED_MXILINX_Top.3> in library <work>.
+Module <CB16CLED_MXILINX_Top.3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_206" for instance <I_Q0> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q1_205" for instance <I_Q1> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q10_196" for instance <I_Q10> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q11_195" for instance <I_Q11> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q12_194" for instance <I_Q12> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q13_193" for instance <I_Q13> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q14_208" for instance <I_Q14> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q15_207" for instance <I_Q15> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q2_204" for instance <I_Q2> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q3_203" for instance <I_Q3> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q4_202" for instance <I_Q4> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q5_201" for instance <I_Q5> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q6_200" for instance <I_Q6> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q7_199" for instance <I_Q7> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q8_198" for instance <I_Q8> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q9_197" for instance <I_Q9> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T1_224" for instance <I_T1> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T10_211" for instance <I_T10> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T11_212" for instance <I_T11> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T12_213" for instance <I_T12> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T13_214" for instance <I_T13> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T14_215" for instance <I_T14> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T15_216" for instance <I_T15> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T2_219" for instance <I_T2> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T3_218" for instance <I_T3> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T4_217" for instance <I_T4> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T5_220" for instance <I_T5> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T6_222" for instance <I_T6> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T7_221" for instance <I_T7> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T8_209" for instance <I_T8> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_T9_210" for instance <I_T9> in unit <CB16CLED_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_TC_223" for instance <I_TC> in unit <CB16CLED_MXILINX_Top.3>.
+Analyzing module <CB16CLED_MXILINX_Top.4> in library <work>.
+Module <CB16CLED_MXILINX_Top.4> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_206" for instance <I_Q0> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q1_205" for instance <I_Q1> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q10_196" for instance <I_Q10> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q11_195" for instance <I_Q11> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q12_194" for instance <I_Q12> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q13_193" for instance <I_Q13> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q14_208" for instance <I_Q14> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q15_207" for instance <I_Q15> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q2_204" for instance <I_Q2> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q3_203" for instance <I_Q3> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q4_202" for instance <I_Q4> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q5_201" for instance <I_Q5> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q6_200" for instance <I_Q6> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q7_199" for instance <I_Q7> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q8_198" for instance <I_Q8> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_Q9_197" for instance <I_Q9> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T1_224" for instance <I_T1> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T10_211" for instance <I_T10> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T11_212" for instance <I_T11> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T12_213" for instance <I_T12> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T13_214" for instance <I_T13> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T14_215" for instance <I_T14> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T15_216" for instance <I_T15> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T2_219" for instance <I_T2> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T3_218" for instance <I_T3> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T4_217" for instance <I_T4> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T5_220" for instance <I_T5> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T6_222" for instance <I_T6> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T7_221" for instance <I_T7> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T8_209" for instance <I_T8> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_T9_210" for instance <I_T9> in unit <CB16CLED_MXILINX_Top.4>.
+    Set user-defined property "HU_SET =  I_TC_223" for instance <I_TC> in unit <CB16CLED_MXILINX_Top.4>.
+Analyzing module <Ball> in library <work>.
+Module <Ball> is correct for synthesis.
+ 
+Analyzing module <Edge_Detector_MUSER_Top> in library <work>.
+Module <Edge_Detector_MUSER_Top> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_1> in unit <Edge_Detector_MUSER_Top>.
+    Set user-defined property "INIT =  0" for instance <XLXI_2> in unit <Edge_Detector_MUSER_Top>.
+Analyzing module <MovePaddle> in library <work>.
+Module <MovePaddle> is correct for synthesis.
+ 
+Analyzing module <scoredetect_MUSER_Top> in library <work>.
+Module <scoredetect_MUSER_Top> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_455> in unit <scoredetect_MUSER_Top>.
+    Set user-defined property "INIT =  0" for instance <XLXI_456> in unit <scoredetect_MUSER_Top>.
+Analyzing module <CB8CE_MXILINX_Top.1> in library <work>.
+Module <CB8CE_MXILINX_Top.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_188" for instance <I_Q0> in unit <CB8CE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q1_189" for instance <I_Q1> in unit <CB8CE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q2_185" for instance <I_Q2> in unit <CB8CE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q3_186" for instance <I_Q3> in unit <CB8CE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q4_187" for instance <I_Q4> in unit <CB8CE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q5_184" for instance <I_Q5> in unit <CB8CE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q6_183" for instance <I_Q6> in unit <CB8CE_MXILINX_Top.1>.
+    Set user-defined property "HU_SET =  I_Q7_182" for instance <I_Q7> in unit <CB8CE_MXILINX_Top.1>.
+Analyzing module <FTCE_MXILINX_Top.1> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.1>.
+Analyzing module <FTCE_MXILINX_Top.2> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.2>.
+Analyzing module <FTCE_MXILINX_Top.3> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.3> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.3>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.3>.
+Analyzing module <FTCE_MXILINX_Top.4> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.4>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.4>.
+Analyzing module <FTCE_MXILINX_Top.5> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.5>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.5>.
+Analyzing module <FTCE_MXILINX_Top.6> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.6> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.6>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.6>.
+Analyzing module <FTCE_MXILINX_Top.7> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.7> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.7>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.7>.
+Analyzing module <FTCE_MXILINX_Top.8> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.8> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.8>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.8>.
+Analyzing module <VGA_Controller> in library <work>.
+Module <VGA_Controller> is correct for synthesis.
+ 
+Analyzing module <CB16CE_MXILINX_Top> in library <work>.
+Module <CB16CE_MXILINX_Top> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_226" for instance <I_Q0> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q1_225" for instance <I_Q1> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q10_235" for instance <I_Q10> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q11_236" for instance <I_Q11> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q12_237" for instance <I_Q12> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q13_238" for instance <I_Q13> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q14_239" for instance <I_Q14> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q15_240" for instance <I_Q15> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q2_228" for instance <I_Q2> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q3_227" for instance <I_Q3> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q4_232" for instance <I_Q4> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q5_231" for instance <I_Q5> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q6_230" for instance <I_Q6> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q7_229" for instance <I_Q7> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q8_233" for instance <I_Q8> in unit <CB16CE_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q9_234" for instance <I_Q9> in unit <CB16CE_MXILINX_Top>.
+Analyzing module <FTCE_MXILINX_Top.9> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.9> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.9>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.9>.
+Analyzing module <FTCE_MXILINX_Top.10> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.10> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.10>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.10>.
+Analyzing module <FTCE_MXILINX_Top.11> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.11> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.11>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.11>.
+Analyzing module <FTCE_MXILINX_Top.12> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.12> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.12>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.12>.
+Analyzing module <FTCE_MXILINX_Top.13> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.13> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.13>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.13>.
+Analyzing module <FTCE_MXILINX_Top.14> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.14> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.14>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.14>.
+Analyzing module <FTCE_MXILINX_Top.15> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.15> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.15>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.15>.
+Analyzing module <FTCE_MXILINX_Top.16> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.16> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.16>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.16>.
+Analyzing module <FTCE_MXILINX_Top.17> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.17> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.17>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.17>.
+Analyzing module <FTCE_MXILINX_Top.18> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.18> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.18>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.18>.
+Analyzing module <FTCE_MXILINX_Top.19> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.19> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.19>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.19>.
+Analyzing module <FTCE_MXILINX_Top.20> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.20> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.20>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.20>.
+Analyzing module <FTCE_MXILINX_Top.21> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.21> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.21>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.21>.
+Analyzing module <FTCE_MXILINX_Top.22> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.22> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.22>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.22>.
+Analyzing module <FTCE_MXILINX_Top.23> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.23> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.23>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.23>.
+Analyzing module <FTCE_MXILINX_Top.24> in library <work>.
+	INIT = 1'b0
+Module <FTCE_MXILINX_Top.24> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.24>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_Top.24>.
+Analyzing module <Carpetmove> in library <work>.
+Module <Carpetmove> is correct for synthesis.
+ 
+Analyzing module <ScorenTimer_MUSER_Top> in library <work>.
+WARNING:Xst:852 - "Top.vf" line 513: Unconnected input port 'D2' of instance 'XLXI_6' is tied to GND.
+WARNING:Xst:852 - "Top.vf" line 513: Unconnected input port 'D3' of instance 'XLXI_6' is tied to GND.
+Module <ScorenTimer_MUSER_Top> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_2_190" for instance <XLXI_2> in unit <ScorenTimer_MUSER_Top>.
+    Set user-defined property "HU_SET =  XLXI_6_192" for instance <XLXI_6> in unit <ScorenTimer_MUSER_Top>.
+    Set user-defined property "HU_SET =  XLXI_7_191" for instance <XLXI_7> in unit <ScorenTimer_MUSER_Top>.
+Analyzing module <CB8CE_MXILINX_Top.2> in library <work>.
+Module <CB8CE_MXILINX_Top.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_188" for instance <I_Q0> in unit <CB8CE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q1_189" for instance <I_Q1> in unit <CB8CE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q2_185" for instance <I_Q2> in unit <CB8CE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q3_186" for instance <I_Q3> in unit <CB8CE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q4_187" for instance <I_Q4> in unit <CB8CE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q5_184" for instance <I_Q5> in unit <CB8CE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q6_183" for instance <I_Q6> in unit <CB8CE_MXILINX_Top.2>.
+    Set user-defined property "HU_SET =  I_Q7_182" for instance <I_Q7> in unit <CB8CE_MXILINX_Top.2>.
+Analyzing module <CB4CLED_MXILINX_Top> in library <work>.
+Module <CB4CLED_MXILINX_Top> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_177" for instance <I_Q0> in unit <CB4CLED_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q1_176" for instance <I_Q1> in unit <CB4CLED_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q2_175" for instance <I_Q2> in unit <CB4CLED_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_Q3_174" for instance <I_Q3> in unit <CB4CLED_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_T1_181" for instance <I_T1> in unit <CB4CLED_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_T2_178" for instance <I_T2> in unit <CB4CLED_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_T3_179" for instance <I_T3> in unit <CB4CLED_MXILINX_Top>.
+    Set user-defined property "HU_SET =  I_TC_180" for instance <I_TC> in unit <CB4CLED_MXILINX_Top>.
+Analyzing module <FTCLEX_MXILINX_Top.17> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.17> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.17>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.17>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.17>.
+Analyzing module <FTCLEX_MXILINX_Top.18> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.18> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.18>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.18>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.18>.
+Analyzing module <FTCLEX_MXILINX_Top.19> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.19> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.19>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.19>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.19>.
+Analyzing module <FTCLEX_MXILINX_Top.20> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_Top.20> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.20>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_Top.20>.
+    Set user-defined property "HU_SET =  I_36_30_173" for instance <I_36_30> in unit <FTCLEX_MXILINX_Top.20>.
+Analyzing module <M2_1_MXILINX_Top.16> in library <work>.
+Module <M2_1_MXILINX_Top.16> is correct for synthesis.
+ 
+Analyzing module <M2_1B1_MXILINX_Top.2> in library <work>.
+Module <M2_1B1_MXILINX_Top.2> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.17> in library <work>.
+Module <M2_1_MXILINX_Top.17> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_Top.18> in library <work>.
+Module <M2_1_MXILINX_Top.18> is correct for synthesis.
+ 
+Analyzing module <CB8CE_MXILINX_Top.3> in library <work>.
+Module <CB8CE_MXILINX_Top.3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_188" for instance <I_Q0> in unit <CB8CE_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q1_189" for instance <I_Q1> in unit <CB8CE_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q2_185" for instance <I_Q2> in unit <CB8CE_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q3_186" for instance <I_Q3> in unit <CB8CE_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q4_187" for instance <I_Q4> in unit <CB8CE_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q5_184" for instance <I_Q5> in unit <CB8CE_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q6_183" for instance <I_Q6> in unit <CB8CE_MXILINX_Top.3>.
+    Set user-defined property "HU_SET =  I_Q7_182" for instance <I_Q7> in unit <CB8CE_MXILINX_Top.3>.
+Analyzing module <FSMmem_MUSER_Top> in library <work>.
+Module <FSMmem_MUSER_Top> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_1> in unit <FSMmem_MUSER_Top>.
+    Set user-defined property "INIT =  0" for instance <XLXI_2> in unit <FSMmem_MUSER_Top>.
+    Set user-defined property "INIT =  0" for instance <XLXI_3> in unit <FSMmem_MUSER_Top>.
+    Set user-defined property "INIT =  0" for instance <XLXI_4> in unit <FSMmem_MUSER_Top>.
+    Set user-defined property "INIT =  0" for instance <XLXI_5> in unit <FSMmem_MUSER_Top>.
+    Set user-defined property "INIT =  0" for instance <XLXI_6> in unit <FSMmem_MUSER_Top>.
+Analyzing module <FSMveri> in library <work>.
+Module <FSMveri> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Hex7seg>.
+    Related source file is "Hex7seg.v".
+WARNING:Xst:646 - Signal <m8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Hex7seg> synthesized.
+
+
+Synthesizing Unit <Ball>.
+    Related source file is "Ball.v".
+WARNING:Xst:647 - Input <frame> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit comparator lessequal for signal <newball>.
+    Found 16-bit adder carry out for signal <add0000$addsub0000> created at line 38.
+    Found 16-bit adder carry out for signal <add0001$addsub0000> created at line 38.
+    Found 17-bit comparator greatequal for signal <ball$cmp_ge0000> created at line 38.
+    Found 16-bit comparator greatequal for signal <ball$cmp_ge0001> created at line 38.
+    Found 17-bit comparator less for signal <ball$cmp_lt0000> created at line 38.
+    Found 17-bit comparator less for signal <ball$cmp_lt0001> created at line 38.
+    Found 16-bit adder carry out for signal <ballscore$addsub0000> created at line 39.
+    Found 17-bit comparator equal for signal <ballscore$cmp_eq0000> created at line 39.
+    Found 16-bit comparator equal for signal <ballscore$cmp_eq0001> created at line 39.
+    Found 16-bit comparator lessequal for signal <downout$cmp_le0000> created at line 37.
+    Found 16-bit comparator lessequal for signal <downout$cmp_le0001> created at line 37.
+    Found 9-bit adder for signal <newballrow$add0000> created at line 41.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+Unit <Ball> synthesized.
+
+
+Synthesizing Unit <MovePaddle>.
+    Related source file is "MovePaddle.v".
+    Found 16-bit comparator greatequal for signal <paddlegone>.
+    Found 16-bit adder carry out for signal <add0000$addsub0000> created at line 36.
+    Found 16-bit comparator greatequal for signal <paddle$cmp_ge0000> created at line 36.
+    Found 18-bit comparator greater for signal <paddle$cmp_gt0000> created at line 36.
+    Found 18-bit comparator greater for signal <paddle$cmp_gt0001> created at line 36.
+    Found 16-bit comparator lessequal for signal <paddle$cmp_le0000> created at line 36.
+    Found 18-bit comparator lessequal for signal <paddle$cmp_le0001> created at line 36.
+    Found 17-bit comparator less for signal <paddle$cmp_lt0000> created at line 36.
+    Found 18-bit subtractor for signal <paddle$sub0000> created at line 36.
+    Found 18-bit subtractor for signal <paddle$sub0001> created at line 36.
+    Found 18-bit subtractor for signal <paddle$sub0002> created at line 36.
+    Found 16-bit adder carry out for signal <paddlescore$addsub0000> created at line 37.
+    Found 17-bit comparator equal for signal <paddlescore$cmp_eq0000> created at line 37.
+    Found 18-bit comparator greater for signal <paddlescore$cmp_gt0000> created at line 37.
+    Found 18-bit comparator lessequal for signal <paddlescore$cmp_le0000> created at line 37.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+Unit <MovePaddle> synthesized.
+
+
+Synthesizing Unit <VGA_Controller>.
+    Related source file is "VGA_Controller.v".
+    Found 16-bit comparator greater for signal <carpet$cmp_gt0000> created at line 45.
+    Found 16-bit comparator greater for signal <carpet$cmp_gt0001> created at line 45.
+    Found 16-bit comparator less for signal <carpet$cmp_lt0000> created at line 45.
+    Found 16-bit comparator less for signal <carpet$cmp_lt0001> created at line 45.
+    Found 16-bit comparator greater for signal <gamebound$cmp_gt0000> created at line 43.
+    Found 16-bit comparator greater for signal <gamebound$cmp_gt0001> created at line 43.
+    Found 16-bit comparator less for signal <gamebound$cmp_lt0000> created at line 43.
+    Found 16-bit comparator less for signal <gamebound$cmp_lt0001> created at line 43.
+    Found 16-bit comparator greater for signal <hsync$cmp_gt0000> created at line 39.
+    Found 16-bit comparator less for signal <hsync$cmp_lt0000> created at line 39.
+    Found 16-bit comparator less for signal <rgbbound$cmp_lt0000> created at line 41.
+    Found 16-bit comparator less for signal <rgbbound$cmp_lt0001> created at line 41.
+    Found 16-bit comparator greater for signal <vsync$cmp_gt0000> created at line 38.
+    Found 16-bit comparator less for signal <vsync$cmp_lt0000> created at line 38.
+    Summary:
+	inferred  14 Comparator(s).
+Unit <VGA_Controller> synthesized.
+
+
+Synthesizing Unit <Carpetmove>.
+    Related source file is "Carpetmove.v".
+    Found 18-bit comparator greater for signal <swirl$cmp_gt0000> created at line 28.
+    Found 18-bit comparator greater for signal <swirl$cmp_gt0001> created at line 28.
+    Found 18-bit comparator greater for signal <swirl$cmp_gt0002> created at line 28.
+    Found 18-bit comparator greater for signal <swirl$cmp_gt0003> created at line 28.
+    Found 18-bit comparator greater for signal <swirl$cmp_gt0004> created at line 28.
+    Found 18-bit comparator greater for signal <swirl$cmp_gt0005> created at line 28.
+    Found 18-bit comparator greater for signal <swirl$cmp_gt0006> created at line 28.
+    Found 18-bit comparator greater for signal <swirl$cmp_gt0007> created at line 28.
+    Found 18-bit comparator greater for signal <swirl$cmp_gt0008> created at line 28.
+    Found 16-bit comparator greater for signal <swirl$cmp_gt0009> created at line 28.
+    Found 16-bit comparator greater for signal <swirl$cmp_gt0010> created at line 28.
+    Found 18-bit comparator less for signal <swirl$cmp_lt0000> created at line 28.
+    Found 18-bit comparator less for signal <swirl$cmp_lt0001> created at line 28.
+    Found 18-bit comparator less for signal <swirl$cmp_lt0002> created at line 28.
+    Found 18-bit comparator less for signal <swirl$cmp_lt0003> created at line 28.
+    Found 18-bit comparator less for signal <swirl$cmp_lt0004> created at line 28.
+    Found 18-bit comparator less for signal <swirl$cmp_lt0005> created at line 28.
+    Found 18-bit comparator less for signal <swirl$cmp_lt0006> created at line 28.
+    Found 18-bit comparator less for signal <swirl$cmp_lt0007> created at line 28.
+    Found 18-bit comparator less for signal <swirl$cmp_lt0008> created at line 28.
+    Found 16-bit comparator less for signal <swirl$cmp_lt0009> created at line 28.
+    Found 16-bit comparator less for signal <swirl$cmp_lt0010> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0000> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0001> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0002> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0003> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0004> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0005> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0006> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0007> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0008> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0009> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0010> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0011> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0012> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0013> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0014> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0015> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0016> created at line 28.
+    Found 18-bit adder for signal <swirl$sub0017> created at line 28.
+    Summary:
+	inferred  18 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+Unit <Carpetmove> synthesized.
+
+
+Synthesizing Unit <FSMveri>.
+    Related source file is "FSMveri.v".
+Unit <FSMveri> synthesized.
+
+
+Synthesizing Unit <Ring_Counter_MUSER_Top>.
+    Related source file is "Top.vf".
+Unit <Ring_Counter_MUSER_Top> synthesized.
+
+
+Synthesizing Unit <Selector_MUSER_Top>.
+    Related source file is "Top.vf".
+Unit <Selector_MUSER_Top> synthesized.
+
+
+Synthesizing Unit <collisionedge_MUSER_Top>.
+    Related source file is "Top.vf".
+Unit <collisionedge_MUSER_Top> synthesized.
+
+
+Synthesizing Unit <FSMmem_MUSER_Top>.
+    Related source file is "Top.vf".
+Unit <FSMmem_MUSER_Top> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_1>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_1> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_2>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_2> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_3>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_3> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_4>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_4> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_5>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_5> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_6>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_6> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_7>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_7> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_8>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_8> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_9>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_9> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_10>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_10> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_11>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_11> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_12>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_12> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_13>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_13> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_14>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_14> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_15>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_15> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_clkcntrl4_16>.
+    Related source file is "clkcntrl4.v".
+Unit <FTCE_MXILINX_clkcntrl4_16> synthesized.
+
+
+Synthesizing Unit <Edge_Detector_MUSER_Top>.
+    Related source file is "Top.vf".
+Unit <Edge_Detector_MUSER_Top> synthesized.
+
+
+Synthesizing Unit <scoredetect_MUSER_Top>.
+    Related source file is "Top.vf".
+Unit <scoredetect_MUSER_Top> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_1>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_1> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_2>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_2> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_3>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_3> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_4>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_4> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_5>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_5> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_6>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_6> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_7>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_7> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_8>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_8> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_9>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_9> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_10>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_10> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_11>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_11> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_12>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_12> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_13>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_13> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_14>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_14> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_15>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_15> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Top_16>.
+    Related source file is "Top.vf".
+Unit <FTRSE_MXILINX_Top_16> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_1>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_1> synthesized.
+
+
+Synthesizing Unit <M2_1B1_MXILINX_Top_1>.
+    Related source file is "Top.vf".
+Unit <M2_1B1_MXILINX_Top_1> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_2>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_3>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_3> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_4>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_4> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_5>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_5> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_6>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_6> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_7>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_7> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_8>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_8> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_9>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_9> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_10>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_10> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_11>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_11> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_12>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_12> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_13>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_13> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_14>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_14> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_15>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_15> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_19>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_19> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_1>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_1> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_2>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_2> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_3>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_3> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_4>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_4> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_5>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_5> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_6>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_6> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_7>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_7> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_8>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_8> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_9>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_9> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_10>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_10> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_11>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_11> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_12>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_12> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_13>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_13> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_14>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_14> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_15>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_15> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_16>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_16> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_17>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_17> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_18>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_18> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_19>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_19> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_20>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_20> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_21>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_21> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_22>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_22> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_23>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_23> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_Top_24>.
+    Related source file is "Top.vf".
+Unit <FTCE_MXILINX_Top_24> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_16>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_16> synthesized.
+
+
+Synthesizing Unit <M2_1B1_MXILINX_Top_2>.
+    Related source file is "Top.vf".
+Unit <M2_1B1_MXILINX_Top_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_17>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_17> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_Top_18>.
+    Related source file is "Top.vf".
+Unit <M2_1_MXILINX_Top_18> synthesized.
+
+
+Synthesizing Unit <CB4CE_MXILINX_clkcntrl4_1>.
+    Related source file is "clkcntrl4.v".
+Unit <CB4CE_MXILINX_clkcntrl4_1> synthesized.
+
+
+Synthesizing Unit <CB4CE_MXILINX_clkcntrl4_2>.
+    Related source file is "clkcntrl4.v".
+Unit <CB4CE_MXILINX_clkcntrl4_2> synthesized.
+
+
+Synthesizing Unit <CB4CE_MXILINX_clkcntrl4_3>.
+    Related source file is "clkcntrl4.v".
+Unit <CB4CE_MXILINX_clkcntrl4_3> synthesized.
+
+
+Synthesizing Unit <CB4CE_MXILINX_clkcntrl4_4>.
+    Related source file is "clkcntrl4.v".
+Unit <CB4CE_MXILINX_clkcntrl4_4> synthesized.
+
+
+Synthesizing Unit <CB16RE_MXILINX_Top_1>.
+    Related source file is "Top.vf".
+Unit <CB16RE_MXILINX_Top_1> synthesized.
+
+
+Synthesizing Unit <CB16RE_MXILINX_Top_2>.
+    Related source file is "Top.vf".
+Unit <CB16RE_MXILINX_Top_2> synthesized.
+
+
+Synthesizing Unit <CB8CE_MXILINX_Top_1>.
+    Related source file is "Top.vf".
+Unit <CB8CE_MXILINX_Top_1> synthesized.
+
+
+Synthesizing Unit <CB16CE_MXILINX_Top>.
+    Related source file is "Top.vf".
+Unit <CB16CE_MXILINX_Top> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_1>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_1> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_2>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_2> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_3>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_3> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_4>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_4> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_5>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_5> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_6>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_6> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_7>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_7> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_8>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_8> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_9>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_9> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_10>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_10> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_11>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_11> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_12>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_12> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_13>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_13> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_14>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_14> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_15>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_15> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_16>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_16> synthesized.
+
+
+Synthesizing Unit <CB8CE_MXILINX_Top_2>.
+    Related source file is "Top.vf".
+Unit <CB8CE_MXILINX_Top_2> synthesized.
+
+
+Synthesizing Unit <CB8CE_MXILINX_Top_3>.
+    Related source file is "Top.vf".
+Unit <CB8CE_MXILINX_Top_3> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_17>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_17> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_18>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_18> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_19>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_19> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_Top_20>.
+    Related source file is "Top.vf".
+Unit <FTCLEX_MXILINX_Top_20> synthesized.
+
+
+Synthesizing Unit <clkcntrl4>.
+    Related source file is "clkcntrl4.v".
+Unit <clkcntrl4> synthesized.
+
+
+Synthesizing Unit <CB16CLED_MXILINX_Top_1>.
+    Related source file is "Top.vf".
+Unit <CB16CLED_MXILINX_Top_1> synthesized.
+
+
+Synthesizing Unit <CB16CLED_MXILINX_Top_2>.
+    Related source file is "Top.vf".
+Unit <CB16CLED_MXILINX_Top_2> synthesized.
+
+
+Synthesizing Unit <CB16CLED_MXILINX_Top_3>.
+    Related source file is "Top.vf".
+Unit <CB16CLED_MXILINX_Top_3> synthesized.
+
+
+Synthesizing Unit <CB16CLED_MXILINX_Top_4>.
+    Related source file is "Top.vf".
+Unit <CB16CLED_MXILINX_Top_4> synthesized.
+
+
+Synthesizing Unit <CB4CLED_MXILINX_Top>.
+    Related source file is "Top.vf".
+Unit <CB4CLED_MXILINX_Top> synthesized.
+
+
+Synthesizing Unit <Pixels_MUSER_Top>.
+    Related source file is "Top.vf".
+WARNING:Xst:647 - Input <hidepaddle> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <foursec> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <rngRow<7:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <g> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Pixels_MUSER_Top> synthesized.
+
+
+Synthesizing Unit <ScorenTimer_MUSER_Top>.
+    Related source file is "Top.vf".
+WARNING:Xst:653 - Signal <XLXN_58> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <ScorenTimer_MUSER_Top> synthesized.
+
+
+Synthesizing Unit <Top>.
+    Related source file is "Top.vf".
+WARNING:Xst:646 - Signal <flashin<7:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <flashin<4:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <carpet> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Collisionedgee> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 27
+ 16-bit adder carry out                                : 5
+ 18-bit adder                                          : 18
+ 18-bit subtractor                                     : 3
+ 9-bit adder                                           : 1
+# Comparators                                          : 55
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greatequal                          : 3
+ 16-bit comparator greater                             : 8
+ 16-bit comparator less                                : 10
+ 16-bit comparator lessequal                           : 4
+ 17-bit comparator equal                               : 2
+ 17-bit comparator greatequal                          : 1
+ 17-bit comparator less                                : 3
+ 18-bit comparator greater                             : 12
+ 18-bit comparator less                                : 9
+ 18-bit comparator lessequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 27
+ 16-bit adder carry out                                : 5
+ 18-bit adder                                          : 18
+ 18-bit subtractor                                     : 3
+ 9-bit adder                                           : 1
+# Registers                                            : 173
+ Flip-Flops                                            : 173
+# Comparators                                          : 55
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greatequal                          : 3
+ 16-bit comparator greater                             : 8
+ 16-bit comparator less                                : 10
+ 16-bit comparator lessequal                           : 4
+ 17-bit comparator equal                               : 2
+ 17-bit comparator greatequal                          : 1
+ 17-bit comparator less                                : 3
+ 18-bit comparator greater                             : 12
+ 18-bit comparator less                                : 9
+ 18-bit comparator lessequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Top> ...
+
+Optimizing unit <Ball> ...
+
+Optimizing unit <MovePaddle> ...
+
+Optimizing unit <VGA_Controller> ...
+
+Optimizing unit <Carpetmove> ...
+
+Optimizing unit <Selector_MUSER_Top> ...
+
+Optimizing unit <FSMmem_MUSER_Top> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_1> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_2> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_3> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_4> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_5> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_6> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_7> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_8> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_9> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_10> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_11> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_12> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_13> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_14> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_15> ...
+
+Optimizing unit <FTCE_MXILINX_clkcntrl4_16> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_1> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_2> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_3> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_4> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_5> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_6> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_7> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_8> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_9> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_10> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_11> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_12> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_13> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_14> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_15> ...
+
+Optimizing unit <FTRSE_MXILINX_Top_16> ...
+
+Optimizing unit <M2_1_MXILINX_Top_1> ...
+
+Optimizing unit <M2_1B1_MXILINX_Top_1> ...
+
+Optimizing unit <M2_1_MXILINX_Top_2> ...
+
+Optimizing unit <M2_1_MXILINX_Top_3> ...
+
+Optimizing unit <M2_1_MXILINX_Top_4> ...
+
+Optimizing unit <M2_1_MXILINX_Top_5> ...
+
+Optimizing unit <M2_1_MXILINX_Top_6> ...
+
+Optimizing unit <M2_1_MXILINX_Top_7> ...
+
+Optimizing unit <M2_1_MXILINX_Top_8> ...
+
+Optimizing unit <M2_1_MXILINX_Top_9> ...
+
+Optimizing unit <M2_1_MXILINX_Top_10> ...
+
+Optimizing unit <M2_1_MXILINX_Top_11> ...
+
+Optimizing unit <M2_1_MXILINX_Top_12> ...
+
+Optimizing unit <M2_1_MXILINX_Top_13> ...
+
+Optimizing unit <M2_1_MXILINX_Top_14> ...
+
+Optimizing unit <M2_1_MXILINX_Top_15> ...
+
+Optimizing unit <M2_1_MXILINX_Top_19> ...
+
+Optimizing unit <FTCE_MXILINX_Top_1> ...
+
+Optimizing unit <FTCE_MXILINX_Top_2> ...
+
+Optimizing unit <FTCE_MXILINX_Top_3> ...
+
+Optimizing unit <FTCE_MXILINX_Top_4> ...
+
+Optimizing unit <FTCE_MXILINX_Top_5> ...
+
+Optimizing unit <FTCE_MXILINX_Top_6> ...
+
+Optimizing unit <FTCE_MXILINX_Top_7> ...
+
+Optimizing unit <FTCE_MXILINX_Top_8> ...
+
+Optimizing unit <FTCE_MXILINX_Top_9> ...
+
+Optimizing unit <FTCE_MXILINX_Top_10> ...
+
+Optimizing unit <FTCE_MXILINX_Top_11> ...
+
+Optimizing unit <FTCE_MXILINX_Top_12> ...
+
+Optimizing unit <FTCE_MXILINX_Top_13> ...
+
+Optimizing unit <FTCE_MXILINX_Top_14> ...
+
+Optimizing unit <FTCE_MXILINX_Top_15> ...
+
+Optimizing unit <FTCE_MXILINX_Top_16> ...
+
+Optimizing unit <FTCE_MXILINX_Top_17> ...
+
+Optimizing unit <FTCE_MXILINX_Top_18> ...
+
+Optimizing unit <FTCE_MXILINX_Top_19> ...
+
+Optimizing unit <FTCE_MXILINX_Top_20> ...
+
+Optimizing unit <FTCE_MXILINX_Top_21> ...
+
+Optimizing unit <FTCE_MXILINX_Top_22> ...
+
+Optimizing unit <FTCE_MXILINX_Top_23> ...
+
+Optimizing unit <FTCE_MXILINX_Top_24> ...
+
+Optimizing unit <M2_1_MXILINX_Top_16> ...
+
+Optimizing unit <M2_1B1_MXILINX_Top_2> ...
+
+Optimizing unit <M2_1_MXILINX_Top_17> ...
+
+Optimizing unit <M2_1_MXILINX_Top_18> ...
+
+Optimizing unit <CB4CE_MXILINX_clkcntrl4_1> ...
+
+Optimizing unit <CB4CE_MXILINX_clkcntrl4_2> ...
+
+Optimizing unit <CB4CE_MXILINX_clkcntrl4_3> ...
+
+Optimizing unit <CB4CE_MXILINX_clkcntrl4_4> ...
+
+Optimizing unit <CB16RE_MXILINX_Top_1> ...
+
+Optimizing unit <CB16RE_MXILINX_Top_2> ...
+
+Optimizing unit <CB8CE_MXILINX_Top_1> ...
+
+Optimizing unit <CB16CE_MXILINX_Top> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_1> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_2> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_3> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_4> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_5> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_6> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_7> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_8> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_9> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_10> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_11> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_12> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_13> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_14> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_15> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_16> ...
+
+Optimizing unit <CB8CE_MXILINX_Top_2> ...
+
+Optimizing unit <CB8CE_MXILINX_Top_3> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_17> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_18> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_19> ...
+
+Optimizing unit <FTCLEX_MXILINX_Top_20> ...
+
+Optimizing unit <clkcntrl4> ...
+
+Optimizing unit <CB16CLED_MXILINX_Top_1> ...
+
+Optimizing unit <CB16CLED_MXILINX_Top_2> ...
+
+Optimizing unit <CB16CLED_MXILINX_Top_3> ...
+
+Optimizing unit <CB16CLED_MXILINX_Top_4> ...
+
+Optimizing unit <CB4CLED_MXILINX_Top> ...
+
+Optimizing unit <Pixels_MUSER_Top> ...
+
+Mapping all equations...
+WARNING:Xst:2170 - Unit I_TC : the following signal(s) form a combinatorial loop: XLXI_267/down.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 82.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 173
+ Flip-Flops                                            : 173
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Top.ngr
+Top Level Output File Name         : Top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 33
+
+Cell Usage :
+# BELS                             : 3469
+#      AND2                        : 212
+#      AND2B1                      : 151
+#      AND2B2                      : 11
+#      AND3                        : 39
+#      AND3B1                      : 5
+#      AND3B2                      : 12
+#      AND3B3                      : 5
+#      AND4                        : 44
+#      AND4B2                      : 1
+#      AND4B3                      : 12
+#      AND4B4                      : 5
+#      AND5                        : 24
+#      AND5B4                      : 12
+#      BUF                         : 1
+#      GND                         : 6
+#      INV                         : 267
+#      LUT1                        : 178
+#      LUT2                        : 500
+#      LUT2_L                      : 2
+#      LUT3                        : 24
+#      LUT3_L                      : 1
+#      LUT4                        : 112
+#      LUT4_D                      : 1
+#      LUT4_L                      : 2
+#      MUXCY                       : 1017
+#      MUXF5                       : 2
+#      OR2                         : 208
+#      OR3                         : 3
+#      OR4                         : 4
+#      VCC                         : 16
+#      XOR2                        : 156
+#      XORCY                       : 436
+# FlipFlops/Latches                : 173
+#      FD                          : 10
+#      FDC                         : 3
+#      FDCE                        : 124
+#      FDE                         : 4
+#      FDRE                        : 32
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGMUX                     : 1
+# IO Buffers                       : 33
+#      IBUF                        : 4
+#      IBUFG                       : 3
+#      OBUF                        : 26
+# DCMs                             : 1
+#      DCM_SP                      : 1
+# Others                           : 1
+#      STARTUP_SPARTAN3E           : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                      544  out of    960    56%  
+ Number of Slice Flip Flops:            173  out of   1920     9%  
+ Number of 4 input LUTs:               1087  out of   1920    56%  
+ Number of IOs:                          33
+ Number of bonded IOBs:                  33  out of     83    39%  
+ Number of GCLKs:                         4  out of     24    16%  
+ Number of DCMs:                          1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)        | Load  |
+-----------------------------------+------------------------------+-------+
+clkin                              | BUFGMUX+XLXI_29/XLXI_36:CLKDV| 173   |
+-----------------------------------+------------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------+-------------------------------------+-------+
+Control Signal                                   | Buffer(FF name)                     | Load  |
+-------------------------------------------------+-------------------------------------+-------+
+XLXI_269/XLXN_50(XLXI_269/XLXI_13:G)             | NONE(XLXI_267/XLXI_298/I_Q0/I_36_35)| 84    |
+XLXI_267/XLXN_1160(XLXI_267/XLXI_487/reset74:O)  | NONE(XLXI_267/XLXI_482/I_Q0/I_36_35)| 16    |
+XLXI_267/XLXI_464/N0(XLXI_267/XLXI_464/XST_GND:G)| NONE(XLXI_267/XLXI_464/I_Q0/I_36_35)| 8     |
+loadlives(XLXI_275/XLXI_17/loadlives1:O)         | NONE(XLXI_269/XLXI_7/I_Q0/I_36_35)  | 8     |
+resettimer(XLXI_275/XLXI_17/resettimer:O)        | NONE(XLXI_269/XLXI_2/I_Q0/I_36_35)  | 8     |
+XLXI_269/XLXI_2/TC(XLXI_269/XLXI_2/I_36_1:O)     | NONE(XLXI_260/XLXI_446)             | 3     |
+-------------------------------------------------+-------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 10.331ns (Maximum Frequency: 96.793MHz)
+   Minimum input arrival time before clock: 17.033ns
+   Maximum output required time after clock: 14.853ns
+   Maximum combinational path delay: 4.734ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkin'
+  Clock period: 10.331ns (frequency: 96.793MHz)
+  Total number of paths / destination ports: 23363 / 345
+-------------------------------------------------------------------------
+Delay:               20.663ns (Levels of Logic = 25)
+  Source:            XLXI_267/XLXI_298/I_Q8/I_36_35 (FF)
+  Destination:       XLXI_267/XLXI_319/I_Q13/I_36_35 (FF)
+  Source Clock:      clkin rising 0.5X
+  Destination Clock: clkin rising 0.5X
+
+  Data Path: XLXI_267/XLXI_298/I_Q8/I_36_35 to XLXI_267/XLXI_319/I_Q13/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.514   0.905  I_36_35 (Q)
+     end scope: 'I_Q8'
+     end scope: 'XLXI_267/XLXI_298'
+     LUT2_L:I1->LO         1   0.612   0.103  XLXI_267/XLXI_442/padcolce_cmp_eq00001121 (XLXI_267/XLXI_442/padcolce_cmp_eq0000112)
+     LUT4:I3->O            2   0.612   0.383  XLXI_267/XLXI_442/padcolce_cmp_eq0000117 (XLXI_267/XLXI_442/padcolce_cmp_eq0000117)
+     LUT4:I3->O            2   0.612   0.383  XLXI_267/XLXI_442/padcolce_cmp_eq000031 (XLXI_267/XLXI_442/padcolce_cmp_eq0000)
+     LUT4:I3->O           33   0.612   1.073  XLXI_267/XLXI_442/padrowce70 (XLXI_267/paddlerowce)
+     begin scope: 'XLXI_267/XLXI_319'
+     begin scope: 'I_T4'
+     AND2B1:I0->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             9   0.612   0.697  I_36_8 (O)
+     end scope: 'I_T4'
+     AND5:I4->O            1   0.612   0.357  I_36_71 (T8_UP)
+     begin scope: 'I_T8'
+     AND2:I0->O            1   0.612   0.357  I_36_9 (M1)
+     OR2:I0->O             9   0.612   0.697  I_36_8 (O)
+     end scope: 'I_T8'
+     AND5B4:I4->O          1   0.612   0.357  I_36_58 (T12_DN)
+     begin scope: 'I_T12'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             9   0.612   0.697  I_36_8 (O)
+     end scope: 'I_T12'
+     AND2B1:I1->O          1   0.612   0.357  I_36_61 (T13_DN)
+     begin scope: 'I_T13'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'I_T13'
+     begin scope: 'I_Q13'
+     XOR2:I0->O            1   0.612   0.357  I_36_32 (TQ)
+     begin scope: 'I_36_30'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'I_36_30'
+     FDCE:D                    0.268          I_36_35
+    ----------------------------------------
+    Total                     20.663ns (11.798ns logic, 8.865ns route)
+                                       (57.1% logic, 42.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkin'
+  Total number of paths / destination ports: 292 / 91
+-------------------------------------------------------------------------
+Offset:              17.033ns (Levels of Logic = 21)
+  Source:            peebs0 (PAD)
+  Destination:       XLXI_267/XLXI_298/I_Q13/I_36_35 (FF)
+  Destination Clock: clkin rising 0.5X
+
+  Data Path: peebs0 to XLXI_267/XLXI_298/I_Q13/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   1.106   1.073  XLXI_226 (XLXN_616)
+     begin scope: 'XLXI_267/XLXI_298'
+     begin scope: 'I_T4'
+     AND2B1:I0->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             9   0.612   0.697  I_36_8 (O)
+     end scope: 'I_T4'
+     AND5:I4->O            1   0.612   0.357  I_36_71 (T8_UP)
+     begin scope: 'I_T8'
+     AND2:I0->O            1   0.612   0.357  I_36_9 (M1)
+     OR2:I0->O             9   0.612   0.697  I_36_8 (O)
+     end scope: 'I_T8'
+     AND5B4:I4->O          1   0.612   0.357  I_36_58 (T12_DN)
+     begin scope: 'I_T12'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             9   0.612   0.697  I_36_8 (O)
+     end scope: 'I_T12'
+     AND2B1:I1->O          1   0.612   0.357  I_36_61 (T13_DN)
+     begin scope: 'I_T13'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'I_T13'
+     begin scope: 'I_Q13'
+     XOR2:I0->O            1   0.612   0.357  I_36_32 (TQ)
+     begin scope: 'I_36_30'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'I_36_30'
+     FDCE:D                    0.268          I_36_35
+    ----------------------------------------
+    Total                     17.033ns (9.942ns logic, 7.091ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkin'
+  Total number of paths / destination ports: 49164 / 24
+-------------------------------------------------------------------------
+Offset:              14.853ns (Levels of Logic = 27)
+  Source:            XLXI_267/XLXI_482/I_Q0/I_36_35 (FF)
+  Destination:       Red0 (PAD)
+  Source Clock:      clkin rising 0.5X
+
+  Data Path: XLXI_267/XLXI_482/I_Q0/I_36_35 to Red0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            24   0.514   1.216  I_36_35 (Q)
+     end scope: 'I_Q0'
+     end scope: 'XLXI_267/XLXI_482'
+     LUT1:I0->O            1   0.612   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<0>_rt (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<0>_rt)
+     MUXCY:S->O            1   0.404   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<0> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<1> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<2> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<3> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<4> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<5> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<6> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<7> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<8> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<9> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<10> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<11> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<12> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<13> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<14> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<15> (XLXI_267/XLXI_487/Madd_swirl_sub0017_cy<15>)
+     XORCY:CI->O           1   0.699   0.509  XLXI_267/XLXI_487/Madd_swirl_sub0017_xor<16> (XLXI_267/XLXI_487/swirl_sub0017<16>)
+     LUT2:I0->O            1   0.612   0.000  XLXI_267/XLXI_487/Mcompar_swirl_cmp_lt0008_lut<16> (XLXI_267/XLXI_487/Mcompar_swirl_cmp_lt0008_lut<16>)
+     MUXCY:S->O            1   0.752   0.509  XLXI_267/XLXI_487/Mcompar_swirl_cmp_lt0008_cy<16> (XLXI_267/XLXI_487/Mcompar_swirl_cmp_lt0008_cy<16>)
+     LUT4:I0->O            1   0.612   0.387  XLXI_267/XLXI_487/swirl17_SW0 (N33)
+     LUT4:I2->O            1   0.612   0.426  XLXI_267/XLXI_487/swirl17 (XLXI_267/XLXI_487/swirl17)
+     LUT4:I1->O            2   0.612   0.380  XLXI_267/XLXI_487/swirl59 (XLXI_267/XLXN_1161)
+     AND2B1:I0->O          2   0.612   0.380  XLXI_267/XLXI_485 (carpetbf)
+     OR3:I0->O             3   0.612   0.451  XLXI_249 (XLXN_570)
+     OBUF:I->O                 3.169          XLXI_128 (Red0)
+    ----------------------------------------
+    Total                     14.853ns (10.594ns logic, 4.258ns route)
+                                       (71.3% logic, 28.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Delay:               4.734ns (Levels of Logic = 2)
+  Source:            clkin (PAD)
+  Destination:       XLXI_35:I0 (PAD)
+
+  Data Path: clkin to XLXI_35:I0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFG:I->O            1   2.563   0.357  XLXI_38 (XLXN_243)
+     BUFG:I->O             1   1.457   0.357  XLXI_142 (XLXN_242)
+    BUFGMUX:I0                 0.000          XLXI_35
+    ----------------------------------------
+    Total                      4.734ns (4.020ns logic, 0.714ns route)
+                                       (84.9% logic, 15.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.82 secs
+ 
+--> 
+
+Total memory usage is 318716 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  112 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,26 @@
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.v -lang verilog -prj Lab7 -o MovePaddle.spl -module MovePaddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MovePaddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.v -lang verilog -prj Lab7 -o MovePaddle.spl -module MovePaddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MovePaddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.v -lang verilog -prj Lab7 -o MovePaddle.spl -module MovePaddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MovePaddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.v -lang verilog -prj Lab7 -o MovePaddle.spl -module MovePaddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MovePaddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.v -lang verilog -prj Lab7 -o MovePaddle.spl -module MovePaddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MovePaddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.v -lang verilog -prj Lab7 -o MovePaddle.spl -module MovePaddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MovePaddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.v -lang verilog -prj Lab7 -o MovePaddle.spl -module MovePaddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MovePaddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.v -lang verilog -prj Lab7 -o MovePaddle.spl -module MovePaddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MovePaddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.v -lang verilog -prj Lab7 -o MovePaddle.spl -module MovePaddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MovePaddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.v -lang verilog -prj Lab7 -o MovePaddle.spl -module MovePaddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MovePaddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.v -lang verilog -prj Lab7 -o MovePaddle.spl -module MovePaddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MovePaddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.v -lang verilog -prj Lab7 -o MovePaddle.spl -module MovePaddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MovePaddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.sym 
+vhdtdtfi -lib work C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.v -lang verilog -prj Lab7 -o MovePaddle.spl -module MovePaddle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w MovePaddle.spl C:/Users/dakriege/Desktop/Lab7/Lab7/MovePaddle.sym 
