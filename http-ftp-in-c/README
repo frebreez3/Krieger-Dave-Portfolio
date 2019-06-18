@@ -1,3 +1,17 @@
+Low level implementation of an HTTP-FTP server/client system. I am going to leave my original README I submitted with the assignment below. Notable features of this system.
+* Users must register and login
+* Navigates packet communication based on HTTP protocol
+	* Must parse line by line of packet-headers
+* POST/GET files of any size
+* System attempts to be secure
+	* Buffer overflow
+	* Users unable to access other users files
+
+
+
+
+------------------------- Original README -----------------------
+
 README:
 
 Requirements:
