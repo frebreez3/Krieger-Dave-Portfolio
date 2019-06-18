@@ -7,8 +7,11 @@ Low level implementation of an HTTP-FTP server/client system. I am going to leav
 	* Buffer overflow
 	* Users unable to access other users files
 
+I recognize that the makefile is bland. This was a requirement for the assignment because it was supposed to be as barebones as possible
 
+The server.c file start features long comments of both the makefile and readme. This was because the assignment was crowd graded and students could only submit a single file.
 
+Below you can find the original README that I wrote
 
 ------------------------- Original README -----------------------
 
