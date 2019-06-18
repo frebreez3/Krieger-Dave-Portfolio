@@ -1,6 +1,6 @@
 # Visulaing Climate Change - Data Wrangling and Data Visualization
 
-A Modified Github Repo from my senior-design group, "*Data Visualization*". We were a groupfour computer science undergraduates studying at UCSC. However, this repo features almost exclusively my work accomplished with the team as well as new code I have developed since graduating.
+A Modified Github Repo from my senior-design group, "*Data Visualization*". We were a group of four computer science undergraduates studying at UCSC. However, this repo features almost exclusively my work accomplished with the team as well as new code I have developed since graduating.
 
 https://data-vizuals.herokuapp.com/
 
@@ -25,8 +25,6 @@ Senior Design Teammates:
 
 Sponsor/Mentor:
   * Richard Jullig
-
-Feel free to contact me at davidkrieger95@gmail.com
 
 If you would like to see the end product produced by the team itself:
 * Github: https://github.com/schan54/Data-Visualization
