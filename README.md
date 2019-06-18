@@ -21,3 +21,4 @@ Finally, Additional README's have been written post hoc and aim to provide addit
  	* Showcases low C programming to create a client-server FTP system.
 	* Reads http-protocol headers and parses them
 	* Users can register, login, and GET/POST only their specific files.
+	* Investigates security issues such as buffer overflow and user identification
