@@ -1,15 +1,5 @@
 README:
 
-Requirements:
-    * Sign up as a user and password
-        --> curl -X POST "http://192.168.0.155:8080/login?username=End&password=Me"
-              * saves user and pass in respective file: 'users.txt'
-        --> will return a setcookie but doesn't stay with client
-    * Access files via setting the cookie to your username and password:
-        --> curl -X POST --cookie "End=Me" 192.168.0.155:8080/some.txt --data-binary @some.txt
-        --> curl -X GET --cookie "End=Me" 192.168.0.155:8080/some.txt --data-binary @some.txt
-              *  Use -O flag for GET if you want to actually DL the file!
-
 Success:
     * All users must first create a username & password
         --> Error checks for dup users
@@ -20,6 +10,18 @@ Success:
     * GET success & returns proper codes
     * POST success for files both less than and greater than buffer size
         -> Can handle any file size!
+
+Requirements:
+    * Sign up as a user and password
+        --> curl -X POST "http://192.168.0.155:8080/login?username=End&password=Me"
+              * saves user and pass in respective file: 'users.txt'
+        --> will return a setcookie but doesn't stay with client
+    * Access files via setting the cookie to your username and password:
+        --> curl -X POST --cookie "End=Me" 192.168.0.155:8080/some.txt --data-binary @some.txt
+        --> curl -X GET --cookie "End=Me" 192.168.0.155:8080/some.txt --data-binary @some.txt
+              *  Use -O flag for GET if you want to actually DL the file!
+
+
 Makefile Notes:
     make                --> generates server, run it with ./server
     make clean          --> removes everything: subdirectories, user.txt, and o files
