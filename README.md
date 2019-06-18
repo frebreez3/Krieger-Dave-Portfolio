@@ -8,12 +8,13 @@ Welcome to my portfolio! I have provided three different programs showcasing my 
 	* Web Development via HTML/CSS/JS
 	* We used the agile/scrum methodology throughout development
 		* Email me if you would like to view our scrum documentation
+		
 * loop-it-in-xilinx
 	* Showcases micro-processor interaction with user input as well as external VGA TV interaction.
 	* It is a uses schematics, state-machine logic, and verilog.
 	* Screenshots have been provided of the schematics as well as of my notebook
 	* Lab report is included to help understand the assignment
-	* Showcases micro-processor interaction with user input as well as external VGA TV interaction. It is uses schematics, state-machine logic, and verilog.
+	
 * http-ftp-in-c
  	* Showcases low C programming to create a client-server FTP system.
 	* Reads http-protocol headers and parses them
