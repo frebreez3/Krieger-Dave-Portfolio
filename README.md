@@ -7,6 +7,6 @@ Three different programs showcasing my experience and skills. My most recent and
 	* Data Visualization via D3 (.js library, but pretty much a language of its own)
 	* Web Development via HTML/CSS
 * loop-it-in-xilinx
-	* Showcases micro-processor interaction with user input as well as external VGA TV interaction. It is a uses schematics, state-machine logic, and verilog.
+	* Showcases micro-processor interaction with user input as well as external VGA TV interaction. It is uses schematics, state-machine logic, and verilog.
 * http-ftp-in-c
  	* Showcases low C programming to create a client-server FTP system. Users can register, login, and GET and POST only their specific files.
